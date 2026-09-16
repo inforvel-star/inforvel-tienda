@@ -1,0 +1,6 @@
+{
+  "default": ["Marca", "EAN", "PN"],
+  "Portátiles": ["Marca", "Procesador", "RAM", "Almacenamiento", "Pantalla", "Sistema operativo"],
+  "Ratones": ["Marca", "Tipo conexión", "DPI", "Número de botones"],
+  "Smartphones": ["Marca", "Pantalla", "RAM", "Almacenamiento", "5G"]
+}

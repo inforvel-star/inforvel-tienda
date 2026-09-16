@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useCartStore } from '@/lib/store/cartStore';
+import { useCouponStore } from '@/lib/store/couponStore';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import { CheckoutForm } from '@/components/checkout/CheckoutForm';
-import { Lock, ShoppingBag } from 'lucide-react';
+import { Lock, ShoppingBag, Loader2 } from 'lucide-react';
 
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
@@ -15,7 +16,12 @@ const stripePromise = loadStripe(
 export default function CheckoutPage() {
   const router = useRouter();
   const { items, getTotal } = useCartStore();
+  const { appliedCoupon } = useCouponStore();
   const [mounted, setMounted] = useState(false);
+  const [clientSecret, setClientSecret] = useState<string | null>(null);
+  const [paymentIntentId, setPaymentIntentId] = useState<string | null>(null);
+  const [checkoutToken, setCheckoutToken] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -27,6 +33,47 @@ export default function CheckoutPage() {
     }
   }, [items, router, mounted]);
 
+  // Create PaymentIntent when items change
+  useEffect(() => {
+    if (!mounted || items.length === 0) return;
+
+    const createPaymentIntent = async () => {
+      try {
+        setError(null);
+        const res = await fetch('/api/create-payment-intent', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            currency: 'eur',
+            line_items: items.map((item) => ({
+              product_id: item.id,
+              quantity: item.quantity,
+            })),
+            coupon_code: appliedCoupon?.code || null,
+            metadata: {
+              items_count: items.length.toString(),
+            },
+          }),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          throw new Error(data.error || 'Error al preparar el pago');
+        }
+
+        setClientSecret(data.clientSecret);
+        setPaymentIntentId(data.paymentIntentId || null);
+        setCheckoutToken(data.checkoutToken || null);
+      } catch (err: any) {
+        console.error('Error creating payment intent:', err);
+        setError(err.message || 'Error al preparar el pago');
+      }
+    };
+
+    createPaymentIntent();
+  }, [mounted, items, getTotal, appliedCoupon]);
+
   if (!mounted) {
     return null;
   }
@@ -35,10 +82,37 @@ export default function CheckoutPage() {
     return null;
   }
 
-  const total = getTotal();
+  const subtotal = getTotal();
+  const total = Math.max(0, subtotal - (appliedCoupon?.discount || 0));
   const basePrice = total / 1.21;
   const tax = total - basePrice;
-  const shipping = 0;
+
+  if (error) {
+    return (
+      <div className="min-h-screen pt-20 pb-16 bg-black flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-red-400 mb-4">{error}</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="px-6 py-3 rounded-lg bg-blue-600 text-white"
+          >
+            Reintentar
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!clientSecret || !paymentIntentId || !checkoutToken) {
+    return (
+      <div className="min-h-screen pt-20 pb-16 bg-black flex items-center justify-center">
+        <div className="flex items-center gap-3 text-zinc-400">
+          <Loader2 className="w-5 h-5 animate-spin" />
+          <span>Preparando el pago...</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen pt-20 pb-16 bg-black">
@@ -58,9 +132,7 @@ export default function CheckoutPage() {
               <Elements
                 stripe={stripePromise}
                 options={{
-                  mode: 'payment',
-                  amount: Math.round(total * 100),
-                  currency: 'eur',
+                  clientSecret,
                   appearance: {
                     theme: 'night',
                     variables: {
@@ -74,7 +146,11 @@ export default function CheckoutPage() {
                   },
                 }}
               >
-                <CheckoutForm />
+                <CheckoutForm
+                  clientSecret={clientSecret}
+                  paymentIntentId={paymentIntentId}
+                  checkoutToken={checkoutToken}
+                />
               </Elements>
             </div>
           </div>
@@ -112,6 +188,12 @@ export default function CheckoutPage() {
               </div>
 
               <div className="space-y-3 py-4 border-y border-zinc-800">
+                {appliedCoupon && (
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-zinc-400">Descuento ({appliedCoupon.code})</span>
+                    <span className="font-medium text-green-500">-{appliedCoupon.discount.toFixed(2)}€</span>
+                  </div>
+                )}
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-zinc-400">Base imponible</span>
                   <span className="font-medium text-white">{basePrice.toFixed(2)}€</span>

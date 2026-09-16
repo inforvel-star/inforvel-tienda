@@ -1,0 +1,59 @@
+{
+    "generated_at_utc": "2026-08-31T06:00:02+00:00",
+    "database": "wpdb",
+    "compatibility": {
+        "enabled": "0",
+        "components": [],
+        "meta_rows": 0
+    },
+    "catalog": {
+        "published_products": 36113
+    },
+    "megasur": {
+        "lock": {
+            "token": "o0vmfLv9qQTr0QZp99C1BtZq",
+            "scope": "daily_sync",
+            "started_at": 1788147002,
+            "expires_at": 1788175802
+        },
+        "running": "1",
+        "last_catalog_sync": "2026-08-29 06:02:39",
+        "last_recategorize_sync": "2026-08-30 05:39:28",
+        "catalog_marker_visible": false,
+        "stock_marker_visible": false,
+        "recategorization_marker_visible": false,
+        "recent_log": [
+            "[2026-08-31 05:37:23] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036217]",
+            "[2026-08-31 05:37:21] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036180]",
+            "[2026-08-31 05:37:18] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036171]",
+            "[2026-08-31 05:37:16] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036151]",
+            "[2026-08-31 05:37:13] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036088]",
+            "[2026-08-31 05:37:10] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036058]",
+            "[2026-08-31 05:37:08] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036057]",
+            "[2026-08-31 05:37:05] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036056]",
+            "[2026-08-31 05:37:02] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000036031]",
+            "[2026-08-31 05:36:54] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [MGS0000034943]",
+            "[2026-08-31 05:36:51] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [MGS0000034942]",
+            "[2026-08-31 05:36:46] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [MGS0000018701]",
+            "[2026-08-31 05:36:19] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000028342]",
+            "[2026-08-31 05:36:17] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025999]",
+            "[2026-08-31 05:36:14] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025939]",
+            "[2026-08-31 05:36:12] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025932]",
+            "[2026-08-31 05:36:09] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025931]",
+            "[2026-08-31 05:36:07] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025927]",
+            "[2026-08-31 05:36:05] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025900]",
+            "[2026-08-31 05:36:02] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025898]",
+            "[2026-08-31 05:35:59] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025896]",
+            "[2026-08-31 05:35:57] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025895]",
+            "[2026-08-31 05:35:54] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025868]",
+            "[2026-08-31 05:35:52] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025828]",
+            "[2026-08-31 05:35:49] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025822]",
+            "[2026-08-31 05:35:46] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025819]",
+            "[2026-08-31 05:35:44] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025795]",
+            "[2026-08-31 05:35:41] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025789]",
+            "[2026-08-31 05:35:39] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025788]",
+            "[2026-08-31 05:35:36] [Megasur] Producto MegaSur retirado: no fue posible importar una imagen válida [DSP0000025754]"
+        ]
+    },
+    "errors_in_retained_sync_log": []
+}

@@ -1,323 +1,56 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { NextRequest } from 'next/server';
+import HomeClient, { HomeProductsResponse } from './HomeClient';
+import { GET as getHomeProductsResponse } from './api/home-products/route';
+import { GET as getWeeklyCampaignsResponse } from './api/weekly-campaigns/route';
 import {
-  Wrench, ShoppingBag, Zap, ShieldCheck, HeartHandshake,
-  ArrowRight, Cpu, Monitor, HardDriveUpload, Fan, Headset,
-  Smartphone
-} from 'lucide-react';
-import { woocommerce, WCProduct } from '@/lib/woocommerce';
+  defaultWeeklyCampaignConfig,
+  getWeeklyCampaignSet,
+  normalizeWeeklyCampaignConfig,
+} from '@/lib/weeklyCampaigns';
 
-interface Service {
-  icon: string;
-  title: string;
-  description: string;
-  color: string;
-}
+export const revalidate = 300;
 
-interface Step {
-  number: number;
-  title: string;
-  description: string;
-}
+const INITIAL_PRODUCT_LIMIT = 6;
 
-interface Testimonial {
-  name: string;
-  text: string;
-  rating: number;
-}
-
-const services: Service[] = [
-  { icon: 'smartphone', title: 'Reparación de móviles', description: 'Pantallas, baterías, conectores y placas base. Todas las marcas con repuestos premium.', color: 'text-blue-400' },
-  { icon: 'monitor', title: 'Reparación de ordenadores', description: 'Diagnóstico de hardware y software para portátiles y sobremesas.', color: 'text-purple-400' },
-  { icon: 'hard-drive-upload', title: 'Instalación de SSD', description: 'Dale una segunda vida a tu equipo multiplicando su velocidad de arranque y carga.', color: 'text-green-400' },
-  { icon: 'zap', title: 'Optimización de PC', description: 'Limpieza de virus, optimización de sistema operativo y mejora de rendimiento.', color: 'text-yellow-400' },
-  { icon: 'fan', title: 'Limpieza de equipos', description: 'Mantenimiento térmico, cambio de pasta térmica y limpieza interna profunda.', color: 'text-cyan-400' },
-  { icon: 'headset', title: 'Soporte técnico', description: 'Asesoramiento experto remoto y presencial para cualquier problema tecnológico.', color: 'text-pink-400' },
-];
-
-const steps: Step[] = [
-  { number: 1, title: 'Contacta', description: 'Llámanos o escríbenos' },
-  { number: 2, title: 'Diagnóstico', description: 'Evaluamos el problema' },
-  { number: 3, title: 'Reparación', description: 'Solucionamos rápido' },
-  { number: 4, title: 'Listo', description: 'Dispositivo como nuevo' },
-];
-
-const testimonials: Testimonial[] = [
-  { name: 'María García', text: 'Excelente servicio. Repararon mi portátil en menos de 24h. Muy profesionales.', rating: 5 },
-  { name: 'Carlos Ruiz', text: 'Cambio de SSD increíble. Mi PC va 10 veces más rápido. 100% recomendable.', rating: 5 },
-  { name: 'Laura Sánchez', text: 'Trato cercano y precios justos. Volveré sin duda para futuras reparaciones.', rating: 5 },
-  { name: 'Javier López', text: 'Me montaron un PC gaming espectacular. Cumplió todas mis expectativas.', rating: 5 },
-  { name: 'Ana Martínez', text: 'Recuperaron todos mis archivos de un disco dañado. ¡Increíble trabajo!', rating: 5 },
-  { name: 'Pedro Fernández', text: 'Rapidez y profesionalidad. Manu es un crack en lo que hace.', rating: 5 },
-];
-
-export default function Home() {
-  const [products, setProducts] = useState<WCProduct[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function loadProducts() {
-      try {
-        const data = await woocommerce.getProducts({ per_page: 8 });
-        setProducts(data);
-      } catch (error) {
-        console.error('Error loading products:', error);
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadProducts();
-  }, []);
-
-  const getIcon = (iconName: string, color: string) => {
-    const icons: any = {
-      smartphone: Smartphone,
-      monitor: Monitor,
-      'hard-drive-upload': HardDriveUpload,
-      zap: Zap,
-      fan: Fan,
-      headset: Headset,
-    };
-    const IconComponent = icons[iconName] || Smartphone;
-    return <IconComponent className={`w-6 h-6 ${color}`} />;
+function limitInitialProducts(payload: HomeProductsResponse): HomeProductsResponse {
+  return {
+    laptops: (payload.laptops ?? []).slice(0, INITIAL_PRODUCT_LIMIT),
+    smartphones: (payload.smartphones ?? []).slice(0, INITIAL_PRODUCT_LIMIT),
+    bestSellers: (payload.bestSellers ?? []).slice(0, INITIAL_PRODUCT_LIMIT),
+    sales: (payload.sales ?? []).slice(0, INITIAL_PRODUCT_LIMIT),
+    latest: (payload.latest ?? []).slice(0, INITIAL_PRODUCT_LIMIT),
+    components: (payload.components ?? []).slice(0, INITIAL_PRODUCT_LIMIT),
+    weeklyLaptops: (payload.weeklyLaptops ?? []).slice(0, INITIAL_PRODUCT_LIMIT),
   };
+}
 
-  return (
-    <div className="bg-black text-white overflow-x-hidden">
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex flex-col items-center justify-center min-h-screen text-center px-4">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+export default async function HomePage() {
+  let campaignConfig = defaultWeeklyCampaignConfig;
 
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm text-sm text-zinc-400 mb-8 animate-fade-in-up">
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-          Servicio técnico activo en tu zona
-        </div>
+  try {
+    const response = await getWeeklyCampaignsResponse();
+    if (response.ok) {
+      campaignConfig = normalizeWeeklyCampaignConfig(await response.json());
+    }
+  } catch (error) {
+    console.error('Error preloading weekly campaigns:', error instanceof Error ? error.message : 'unknown error');
+  }
 
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-4xl mx-auto mb-6 leading-tight">
-          Tu solución tecnológica <br className="hidden md:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">
-            rápida y profesional
-          </span>
-        </h1>
+  const campaigns = getWeeklyCampaignSet(campaignConfig);
+  let initialProducts: HomeProductsResponse | null = null;
 
-        <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10">
-          Expertos en reparación de dispositivos y venta de equipamiento premium.
-          Solucionamos tus problemas hoy mismo.
-        </p>
+  try {
+    const url = new URL('http://localhost/api/home-products');
+    url.searchParams.set('laptop_brand', campaigns.laptops.brand);
+    url.searchParams.set('smartphone_brand', campaigns.smartphones.brand);
+    const response = await getHomeProductsResponse(new NextRequest(url));
 
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <a href="tel:+34652369650" className="w-full sm:w-auto px-8 py-3 rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2">
-            Solicitar reparación
-            <Wrench className="w-4 h-4" />
-          </a>
-          <Link href="/tienda" className="w-full sm:w-auto px-8 py-3 rounded-full border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2">
-            Ver tienda
-            <ShoppingBag className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+    if (response.ok) {
+      initialProducts = limitInitialProducts(await response.json() as HomeProductsResponse);
+    }
+  } catch (error) {
+    console.error('Error preloading home products for SSR:', error instanceof Error ? error.message : 'unknown error');
+  }
 
-      {/* Services */}
-      <section id="servicios" className="py-24 relative border-t border-zinc-900 bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16 max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Servicios Especializados</h2>
-            <p className="text-zinc-400">Diagnóstico preciso y soluciones rápidas para devolverle la vida a tus dispositivos tecnológicos.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, index) => (
-              <div key={index} className="border border-zinc-900 rounded-2xl p-6 flex flex-col h-full bg-zinc-950/50 hover:bg-zinc-900/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-lg bg-zinc-950 border border-zinc-900 flex items-center justify-center mb-6">
-                  {getIcon(service.icon, service.color)}
-                </div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-zinc-400 text-sm flex-grow">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How it Works */}
-      <section id="como-funciona" className="py-24 relative border-t border-zinc-900">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Cómo funciona</h2>
-            <p className="text-zinc-400">Un proceso diseñado para tu comodidad y rapidez.</p>
-          </div>
-
-          <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-[1px] bg-zinc-900 -z-10 -translate-y-1/2"></div>
-            {steps.map((step) => (
-              <div key={step.number} className="relative">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg shadow-blue-500/20">
-                  {step.number}
-                </div>
-                <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
-                <p className="text-sm text-zinc-400">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Store Section */}
-      <section id="tienda" className="py-24 relative border-t border-zinc-900 bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Tienda Inforvel</h2>
-              <p className="text-zinc-400 max-w-md">Equipos, componentes y accesorios de última generación cuidadosamente seleccionados.</p>
-            </div>
-            <Link href="/tienda" className="mt-6 md:mt-0 px-6 py-2 rounded-full border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 transition-colors text-sm">
-              Ver catálogo completo
-            </Link>
-          </div>
-
-          {loading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[...Array(8)].map((_, i) => (
-                <div key={i} className="animate-pulse">
-                  <div className="aspect-square bg-zinc-900 rounded-xl mb-4"></div>
-                  <div className="h-4 bg-zinc-900 rounded w-3/4 mb-2"></div>
-                  <div className="h-4 bg-zinc-900 rounded w-1/2"></div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {products.slice(0, 8).map((product) => (
-                <Link
-                  key={product.id}
-                  href={`/producto/${product.slug}`}
-                  className="group"
-                >
-                  <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-900 bg-zinc-950 mb-4 group-hover:border-blue-500/50 transition-all">
-                    <Image
-                      src={product.images[0]?.src || '/placeholder.png'}
-                      alt={product.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <h3 className="font-medium mb-2 line-clamp-2 group-hover:text-blue-400 transition-colors">{product.name}</h3>
-                  <p className="text-xl font-bold text-blue-400">{product.price}€</p>
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* Why Us */}
-      <section id="nosotros" className="py-24 relative border-t border-zinc-900">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Por qué nos eligen</h2>
-              <p className="text-zinc-400 mb-8 text-lg">
-                En Inforvel no solo vendemos y reparamos; construimos confianza mediante resultados. Nuestro compromiso es tu tranquilidad tecnológica.
-              </p>
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0">
-                    <Zap className="w-5 h-5 text-blue-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-lg mb-1">Servicio ultrarrápido</h3>
-                    <p className="text-sm text-zinc-400">Diagnosticamos y solucionamos la mayoría de los problemas en tiempo récord. Tu tiempo vale oro.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0">
-                    <ShieldCheck className="w-5 h-5 text-green-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-lg mb-1">Técnico experto (Manu)</h3>
-                    <p className="text-sm text-zinc-400">Atención directa, sin intermediarios. Explicaciones claras y soluciones honestas a precios competitivos.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0">
-                    <HeartHandshake className="w-5 h-5 text-purple-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-lg mb-1">Atención personalizada</h3>
-                    <p className="text-sm text-zinc-400">Nos adaptamos a tus necesidades específicas, ofreciendo soporte cercano y resolutivo.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 blur-3xl -z-10 rounded-full"></div>
-              <div className="border border-zinc-800 rounded-2xl p-8 bg-zinc-950/50 backdrop-blur-sm">
-                <div className="grid grid-cols-2 gap-6 text-center">
-                  <div className="p-4">
-                    <div className="text-4xl font-bold mb-2">99%</div>
-                    <div className="text-sm text-zinc-400">Reparaciones exitosas</div>
-                  </div>
-                  <div className="p-4">
-                    <div className="text-4xl font-bold mb-2">24h</div>
-                    <div className="text-sm text-zinc-400">Tiempo medio resolución</div>
-                  </div>
-                  <div className="p-4">
-                    <div className="text-4xl font-bold mb-2">5.0</div>
-                    <div className="text-sm text-zinc-400">Estrellas en Google</div>
-                  </div>
-                  <div className="p-4">
-                    <div className="text-4xl font-bold mb-2">+1k</div>
-                    <div className="text-sm text-zinc-400">Clientes satisfechos</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section id="testimonios" className="py-24 relative border-t border-zinc-900 bg-[#050505] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Lo que dicen de nosotros</h2>
-          <p className="text-zinc-400">Basado en reseñas reales de Google.</p>
-        </div>
-
-        <div className="flex gap-6 px-6 overflow-x-auto scrollbar-hide">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="min-w-[350px] p-6 rounded-xl border border-zinc-900 bg-zinc-950/50">
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="text-yellow-500">★</span>
-                ))}
-              </div>
-              <p className="text-sm text-zinc-300 mb-4">{testimonial.text}</p>
-              <p className="font-medium">{testimonial.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-32 relative border-t border-zinc-900 text-center px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/10 pointer-events-none"></div>
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Arregla tu dispositivo hoy mismo</h2>
-          <p className="text-lg text-zinc-400 mb-10">No dejes que un problema técnico frene tu ritmo. Contacta ahora y obtén un diagnóstico rápido y profesional.</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="tel:+34652369650" className="w-full sm:w-auto px-8 py-3 rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-              Solicitar reparación
-              <ArrowRight className="w-4 h-4" />
-            </a>
-            <Link href="/tienda" className="w-full sm:w-auto px-8 py-3 rounded-full border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2">
-              Ver tienda
-            </Link>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  );
+  return <HomeClient initialProducts={initialProducts} initialCampaigns={campaigns} />;
 }

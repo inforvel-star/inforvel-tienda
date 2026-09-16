@@ -1,0 +1,43 @@
+Site: Inforvel
+URL: https://inforvel.online
+Type: Ecommerce + Servicio tecnico informatico
+Language: es
+
+Summary:
+Inforvel es una tienda online de informatica con foco en Cordoba y envios a toda Espana.
+Vendemos portatiles, smartphones, componentes, consumibles y equipos reacondicionados.
+Tambien ofrecemos reparacion de moviles y ordenadores, con soporte tecnico cercano y atencion personalizada.
+
+Primary audience:
+- Personas que quieren comprar tecnologia online con asesoramiento claro.
+- Empresas y profesionales que necesitan equipos y soporte tecnico fiable.
+- Usuarios en Cordoba que buscan reparacion de dispositivos.
+
+Core topics:
+- Tienda online de informatica
+- Portatiles y ordenadores
+- Smartphones y accesorios
+- Reacondicionados con garantia
+- Servicio tecnico y reparaciones
+
+Key pages:
+- Inicio: https://inforvel.online/
+- Tienda: https://inforvel.online/tienda
+- Ofertas: https://inforvel.online/ofertas
+- Reacondicionados: https://inforvel.online/reacondicionados
+- Blog: https://inforvel.online/blog
+- Servicio tecnico: https://inforvel.online/servicio-tecnico-cordoba
+- Reparacion informatica: https://inforvel.online/reparacion-informatica-cordoba
+
+Policies:
+- Privacidad: https://inforvel.online/politica-privacidad
+- Cookies: https://inforvel.online/politica-cookies
+- Aviso legal: https://inforvel.online/aviso-legal
+- Condiciones generales: https://inforvel.online/condiciones-generales
+
+Contact:
+- Email: inforvel@inforvel.online
+- Telefono: +34 652 369 650
+
+Structured data:
+El sitio publica metadatos JSON-LD con entidades de Organization, ComputerStore, WebSite, WebPage, OfferCatalog y FAQPage, ademas de Product en fichas de producto.

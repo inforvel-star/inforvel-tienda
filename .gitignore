@@ -34,3 +34,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# MegaSur snapshots
+/storage/
+
+# Catalog unifier runtime artifacts
+/catalog-unifier/output/
+/catalog-unifier/storage/*.db
+/catalog-unifier/storage/*.db-*
+
+# Runtime logs
+/logs/

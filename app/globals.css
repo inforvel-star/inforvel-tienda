@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Plus+Jakarta+Sans:wght@600;700&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -43,6 +45,26 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    --iv-blue-900: #0A1628;
+    --iv-blue-800: #102040;
+    --iv-blue-700: #1A3158;
+    --iv-blue-600: #1E4080;
+    --iv-blue-500: #2253A8;
+    --iv-blue-400: #3B72D4;
+    --iv-electric: #00C2FF;
+    --iv-slate-50: #F8FAFC;
+    --iv-slate-100: #F0F4F8;
+    --iv-slate-200: #E2E8F0;
+    --iv-slate-400: #718096;
+    --iv-slate-600: #4A5568;
+    --iv-slate-900: #0F1419;
+    --iv-success: #00875A;
+    --iv-warning: #FF8B00;
+    --iv-error: #DE350B;
+    --iv-font-head: 'Plus Jakarta Sans', sans-serif;
+    --iv-font-body: 'Inter', sans-serif;
+    --iv-font-code: 'JetBrains Mono', monospace;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -78,6 +100,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--iv-font-body);
   }
 }
 
@@ -104,4 +127,9 @@
 
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out;
+}
+
+.iv-focus:focus-visible {
+  outline: 2px solid var(--iv-electric);
+  outline-offset: 2px;
 }

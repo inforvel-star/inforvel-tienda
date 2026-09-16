@@ -33,7 +33,7 @@ export default function LoginPage() {
 
       toast.success(`Bienvenido ${response.user_display_name || 'de nuevo'}`);
 
-      await syncCartOnLogin();
+      await syncCartOnLogin(response.user_email || email);
 
       router.push('/cuenta');
     } catch (error) {

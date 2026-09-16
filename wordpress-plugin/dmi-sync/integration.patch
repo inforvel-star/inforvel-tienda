@@ -1,0 +1,79 @@
+diff --git a/dmi-sync.php b/dmi-sync.php
+--- a/dmi-sync.php
++++ b/dmi-sync.php
+@@
+ require_once DMI_SYNC_PATH . 'includes/class-dmi-cron.php';
+ require_once DMI_SYNC_PATH . 'includes/class-megasur-api.php';
++require_once DMI_SYNC_PATH . 'includes/class-megasur-category-guardrails.php';
++require_once DMI_SYNC_PATH . 'includes/class-pc-compatibility-extractor.php';
+ require_once DMI_SYNC_PATH . 'includes/class-megasur-category-normalizer.php';
+diff --git a/includes/class-dmi-importer.php b/includes/class-dmi-importer.php
+--- a/includes/class-dmi-importer.php
++++ b/includes/class-dmi-importer.php
+@@
+         update_post_meta( $saved_id, '_dmi_product_id', sanitize_text_field( $p['id'] ?? '' ) );
++
++        // Feature flag desactivada por defecto. La clase lee specifications
++        // directamente y protege cualquier registro marcado como manual.
++        if ( Inforvel_PC_Compatibility_Extractor::should_process( $p ) ) {
++            $compatibility = Inforvel_PC_Compatibility_Extractor::analyze( $p, 'dmi' );
++            Inforvel_PC_Compatibility_Extractor::persist_analysis( $saved_id, $compatibility );
++        }
+ 
+         // Extraer atributos técnicos de la descripción de DMI
+diff --git a/includes/class-megasur-importer.php b/includes/class-megasur-importer.php
+--- a/includes/class-megasur-importer.php
++++ b/includes/class-megasur-importer.php
+@@
+         $saved_id = $product->save();
++
++        // Herencia DMI secundaria; si no existe enlace se usa tabla CPU/texto.
++        // persist_analysis no escribe mientras iv_pc_compatibility_enabled != 1.
++        if ( Inforvel_PC_Compatibility_Extractor::should_process( $p ) ) {
++            $linked_compatibility = $linked_product
++                ? Inforvel_PC_Compatibility_Extractor::read_product_fields( intval( $linked_product ) )
++                : [];
++            $compatibility = Inforvel_PC_Compatibility_Extractor::analyze( $p, 'megasur', $linked_compatibility );
++            Inforvel_PC_Compatibility_Extractor::persist_analysis( $saved_id, $compatibility );
++        }
+ 
+         delete_post_meta( $saved_id, '_dmi_image_url' );
+diff --git a/includes/class-megasur-category-normalizer.php b/includes/class-megasur-category-normalizer.php
+--- a/includes/class-megasur-category-normalizer.php
++++ b/includes/class-megasur-category-normalizer.php
+@@
+     public static function normalize( string $familia, string $subfamilia, string $category = '', string $title = '', string $description = '', string $part_number = '', string $ean = '' ) : array {
++        $guardrail = Megasur_Category_Guardrails::classify( $title, $part_number );
++        if ( $guardrail ) {
++            return [
++                'wc_parent'  => $guardrail['wc_parent'],
++                'wc_child'   => $guardrail['wc_child'],
++                'dmi_cat_id' => $guardrail['dmi_cat_id'],
++            ];
++        }
++
+         $familia_norm    = self::normalize_compare( $familia );
+diff --git a/includes/class-megasur-importer.php b/includes/class-megasur-importer.php
+--- a/includes/class-megasur-importer.php
++++ b/includes/class-megasur-importer.php
+@@
+         if ( in_array( $subfamilia_norm, $generic_subfamilies, true ) ) {
+             // Ignore generic MegaSur subfamily labels that cause false desktop classification.
+             $subfamilia_original = '';
+         }
++
++        // An unambiguous product title takes precedence over broad provider
++        // families such as REDES or CAJAS Y BAREBONES.
++        $guardrail = Megasur_Category_Guardrails::classify( $name_hint );
++        if ( $guardrail ) {
++            $guard_parent_id = $this->find_best_existing_category_id( [ $guardrail['wc_parent'] ], 0 );
++            $guard_child_id  = $this->find_best_existing_category_id( [ $guardrail['wc_child'] ], $guard_parent_id );
++            if ( $guard_child_id ) {
++                return [ $guard_child_id ];
++            }
++            if ( $guard_parent_id ) {
++                return [ $guard_parent_id ];
++            }
++        }
+ 
+         // Hard guardrails: trust MegaSur family buckets before fuzzy matching to avoid

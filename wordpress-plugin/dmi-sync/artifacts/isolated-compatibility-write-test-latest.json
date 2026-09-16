@@ -1,0 +1,31 @@
+{
+    "generated_at_utc": "2026-08-29T15:36:39+00:00",
+    "database": "wpdb_compat_dev",
+    "selected_products": 2057,
+    "loaded_products": 2057,
+    "by_provider": {
+        "dmi": 859,
+        "megasur": 1198
+    },
+    "analyzed_components": 1955,
+    "disabled_write_check": {
+        "before": 0,
+        "after": 0,
+        "reason": "disabled"
+    },
+    "persistence_results": {
+        "category_mismatch": 485,
+        "manual_preserved": 1,
+        "not_component": 102,
+        "scope_exclusion": 44,
+        "updated": 1425
+    },
+    "manual_preserved": {
+        "product_id": 48436,
+        "field": "_iv_compat_case_form_factors",
+        "ok": true
+    },
+    "products_with_compat_meta": 1426,
+    "compat_meta_rows": 8567,
+    "feature_flag_after_test": "0"
+}

@@ -1,0 +1,9 @@
+# Runtime artifacts
+storage/*.db
+storage/*.db-*
+output/*.json
+output/*.csv
+output/*.ndjson
+
+# Environment overrides
+.env

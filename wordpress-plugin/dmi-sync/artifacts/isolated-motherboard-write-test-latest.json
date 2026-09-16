@@ -1,0 +1,30 @@
+{
+    "generated_at_utc": "2026-08-29T17:17:37+00:00",
+    "database": "wpdb_compat_dev",
+    "component_scope": "motherboard",
+    "selected_products": 2057,
+    "loaded_products": 2057,
+    "by_provider": {
+        "dmi": 859,
+        "megasur": 1198
+    },
+    "analyzed_components": 124,
+    "disabled_write_check": {
+        "before": 0,
+        "after": 0,
+        "reason": "disabled"
+    },
+    "persistence_results": {
+        "manual_preserved": 1,
+        "skipped_by_scope": 1933,
+        "updated": 123
+    },
+    "manual_preserved": {
+        "product_id": 348677,
+        "field": "_iv_compat_ram_type",
+        "ok": true
+    },
+    "products_with_compat_meta": 124,
+    "compat_meta_rows": 966,
+    "feature_flag_after_test": "0"
+}

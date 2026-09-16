@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { databaseAPI } from '@/lib/api/database';
 
 export interface CartItem {
   id: number;
@@ -16,6 +17,7 @@ interface CartStore {
   isOpen: boolean;
   isLoading: boolean;
   isSyncing: boolean;
+  userId: string | null;
 
   addItem: (item: Omit<CartItem, 'quantity'> & { quantity?: number }) => void;
   removeItem: (id: number, variationId?: number) => void;
@@ -28,19 +30,36 @@ interface CartStore {
 
   loadCartFromServer: () => Promise<void>;
   saveCartToServer: () => Promise<void>;
-  syncCartOnLogin: () => Promise<void>;
+  syncCartOnLogin: (userEmail: string) => Promise<void>;
   setItems: (items: CartItem[]) => void;
   setLoading: (loading: boolean) => void;
   setSyncing: (syncing: boolean) => void;
+  setUserId: (userId: string | null) => void;
 }
 
 const getAuthToken = (): string | null => {
   if (typeof window === 'undefined') return null;
-  return localStorage.getItem('wc_auth_token');
+  return localStorage.getItem('wc_auth_state') === '1' ? 'session' : null;
+};
+
+const getUserEmail = (): string | null => {
+  if (typeof window === 'undefined') return null;
+  return localStorage.getItem('wc_user_email');
 };
 
 const isUserLoggedIn = (): boolean => {
   return !!getAuthToken();
+};
+
+const getSessionId = (): string => {
+  if (typeof window === 'undefined') return '';
+
+  let sessionId = localStorage.getItem('cart_session_id');
+  if (!sessionId) {
+    sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    localStorage.setItem('cart_session_id', sessionId);
+  }
+  return sessionId;
 };
 
 export const useCartStore = create<CartStore>()(
@@ -50,6 +69,7 @@ export const useCartStore = create<CartStore>()(
       isOpen: false,
       isLoading: false,
       isSyncing: false,
+      userId: null,
 
       addItem: async (item) => {
         const items = get().items;
@@ -149,28 +169,17 @@ export const useCartStore = create<CartStore>()(
 
       setSyncing: (syncing) => set({ isSyncing: syncing }),
 
+      setUserId: (userId) => set({ userId }),
+
       loadCartFromServer: async () => {
-        const token = getAuthToken();
-        if (!token) return;
+        if (!isUserLoggedIn()) return;
 
         try {
           set({ isLoading: true });
-
-          const response = await fetch(
-            `${process.env.NEXT_PUBLIC_WC_URL}/wp-json/custom/v1/cart`,
-            {
-              headers: {
-                'Authorization': `Bearer ${token}`,
-                'Content-Type': 'application/json',
-              },
-            }
-          );
-
-          if (response.ok) {
-            const data = await response.json();
-            if (data.success && Array.isArray(data.cart)) {
-              set({ items: data.cart });
-            }
+          const serverItems = await databaseAPI.getCartItems();
+          // Always sync from server — including empty arrays (user deleted everything on another device)
+          if (serverItems !== null && serverItems !== undefined) {
+            set({ items: serverItems });
           }
         } catch (error) {
           console.error('Error loading cart from server:', error);
@@ -180,67 +189,32 @@ export const useCartStore = create<CartStore>()(
       },
 
       saveCartToServer: async () => {
-        const token = getAuthToken();
-        if (!token) return;
+        if (!isUserLoggedIn()) return;
 
         try {
-          const response = await fetch(
-            `${process.env.NEXT_PUBLIC_WC_URL}/wp-json/custom/v1/cart`,
-            {
-              method: 'POST',
-              headers: {
-                'Authorization': `Bearer ${token}`,
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ items: get().items }),
-            }
-          );
-
-          if (!response.ok) {
-            console.error('Error saving cart to server');
+          const items = get().items;
+          if (items.length === 0) {
+            // If cart is empty, clear it on server so other devices see the deletion
+            await databaseAPI.clearCart();
+          } else {
+            await databaseAPI.saveCartItems(items);
           }
         } catch (error) {
           console.error('Error saving cart to server:', error);
         }
       },
 
-      syncCartOnLogin: async () => {
-        const token = getAuthToken();
-        if (!token) return;
-
+      syncCartOnLogin: async (userEmail: string) => {
         try {
           set({ isSyncing: true });
 
           const localItems = get().items;
+          const serverItems = await databaseAPI.getCartItems();
 
-          const response = await fetch(
-            `${process.env.NEXT_PUBLIC_WC_URL}/wp-json/custom/v1/cart`,
-            {
-              headers: {
-                'Authorization': `Bearer ${token}`,
-                'Content-Type': 'application/json',
-              },
-            }
-          );
-
-          if (response.ok) {
-            const data = await response.json();
-
-            if (data.success && Array.isArray(data.cart) && data.cart.length > 0) {
-              set({ items: data.cart });
-            } else if (localItems.length > 0) {
-              await fetch(
-                `${process.env.NEXT_PUBLIC_WC_URL}/wp-json/custom/v1/cart`,
-                {
-                  method: 'POST',
-                  headers: {
-                    'Authorization': `Bearer ${token}`,
-                    'Content-Type': 'application/json',
-                  },
-                  body: JSON.stringify({ items: localItems }),
-                }
-              );
-            }
+          if (serverItems && serverItems.length > 0) {
+            set({ items: serverItems });
+          } else if (localItems.length > 0) {
+            await databaseAPI.saveCartItems(localItems);
           }
         } catch (error) {
           console.error('Error syncing cart on login:', error);

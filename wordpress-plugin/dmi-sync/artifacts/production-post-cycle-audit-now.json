@@ -1,0 +1,23 @@
+{
+    "generated_at_utc": "2026-08-29T17:20:52+00:00",
+    "database": "wpdb",
+    "compatibility": {
+        "enabled": "0",
+        "components": [],
+        "meta_rows": 0
+    },
+    "catalog": {
+        "published_products": 36117
+    },
+    "megasur": {
+        "lock": [],
+        "running": "",
+        "last_catalog_sync": "2026-08-29 06:02:39",
+        "last_recategorize_sync": "2026-08-29 06:10:00",
+        "catalog_marker_visible": false,
+        "stock_marker_visible": false,
+        "recategorization_marker_visible": false,
+        "recent_log": []
+    },
+    "errors_in_retained_sync_log": []
+}

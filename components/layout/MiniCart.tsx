@@ -146,6 +146,7 @@ export function MiniCart() {
                 size="lg"
                 asChild
                 disabled={isLoading}
+                onClick={() => setCartOpen(false)}
               >
                 <Link href="/checkout">
                   {isLoading ? (
@@ -159,7 +160,7 @@ export function MiniCart() {
                 </Link>
               </Button>
 
-              <Button
+            <Button
   className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg shadow-blue-500/20 text-black border-0"
   onClick={() => setCartOpen(false)}
   asChild
