@@ -1,0 +1,699 @@
+{
+  "providerRules": {
+    "megasur": [
+      {
+        "rawFamily": "PCs Sobremesa",
+        "rawSubfamily": "",
+        "family": "Ordenadores",
+        "subfamily": "Sobremesa"
+      },
+      {
+        "rawFamily": "PORTATILES",
+        "rawSubfamily": "",
+        "family": "Portátiles",
+        "subfamily": "Portátiles"
+      }
+    ],
+    "dmi": [
+      {
+        "rawFamily": "PCs Sobremesa",
+        "rawSubfamily": "*",
+        "family": "Ordenadores",
+        "subfamily": "Sobremesa"
+      },
+      {
+        "rawFamily": "Switches y Transceptores",
+        "rawSubfamily": "*",
+        "family": "Redes",
+        "subfamily": "Switches"
+      },
+      {
+        "rawFamily": "Wifi",
+        "rawSubfamily": "*",
+        "family": "Redes",
+        "subfamily": "WiFi"
+      },
+      {
+        "rawFamily": "Routers y Modems",
+        "rawSubfamily": "*",
+        "family": "Redes",
+        "subfamily": "Routers y módems"
+      },
+      {
+        "rawFamily": "Cajas y fuentes",
+        "rawSubfamily": "*",
+        "family": "Componentes",
+        "subfamily": "Cajas y fuentes"
+      },
+      {
+        "rawFamily": "Memoria RAM",
+        "rawSubfamily": "*",
+        "family": "Componentes",
+        "subfamily": "Memoria RAM"
+      },
+      {
+        "rawFamily": "Placas base",
+        "rawSubfamily": "*",
+        "family": "Componentes",
+        "subfamily": "Placas base"
+      },
+      {
+        "rawFamily": "Discos duros internos",
+        "rawSubfamily": "*",
+        "family": "Almacenamiento",
+        "subfamily": "SSD y HDD internos"
+      },
+      {
+        "rawFamily": "Accesorios telefonía",
+        "rawSubfamily": "*",
+        "family": "Telefonía",
+        "subfamily": "Accesorios"
+      },
+      {
+        "rawFamily": "Accesorios portátiles",
+        "rawSubfamily": "*",
+        "family": "Portátiles",
+        "subfamily": "Accesorios"
+      },
+      {
+        "rawFamily": "Auriculares",
+        "rawSubfamily": "*",
+        "family": "Audio",
+        "subfamily": "Auriculares"
+      },
+      {
+        "rawFamily": "Electricidad",
+        "rawSubfamily": "*",
+        "family": "Energía",
+        "subfamily": "SAI y electricidad"
+      },
+      {
+        "rawFamily": "TV",
+        "rawSubfamily": "*",
+        "family": "TV y vídeo",
+        "subfamily": "TV y soportes"
+      },
+      {
+        "rawFamily": "Smarthome y Seguridad",
+        "rawSubfamily": "*",
+        "family": "Hogar inteligente",
+        "subfamily": "Seguridad y domótica"
+      },
+      {
+        "rawFamily": "Rack",
+        "rawSubfamily": "*",
+        "family": "Redes",
+        "subfamily": "Rack"
+      },
+      {
+        "rawFamily": "Adaptadores y Convertidores",
+        "rawSubfamily": "*",
+        "family": "Cables y Conectores",
+        "subfamily": "Adaptadores"
+      },
+      {
+        "rawFamily": "Varios",
+        "rawSubfamily": "Calculadoras",
+        "family": "Oficina",
+        "subfamily": "Equipamiento"
+      }
+    ]
+  },
+  "brandRules": [
+    {
+      "pattern": "\\b(funko|banpresto|hasbro|playmobil|tamashii|ichibansho|q\\s?posket|kotobukiya|good\\s?smile|megahouse|noble\\s?collection|abystyle|sd\\s?toys|enesco|neca|plum|bizak)\\b",
+      "family": "Coleccionismo",
+      "subfamily": "Figuras y merchandising"
+    },
+    {
+      "pattern": "\\b(asmodee|devir|gdm|ravensburger|pegi)\\b",
+      "family": "Juegos y Ocio",
+      "subfamily": "Juegos de mesa"
+    },
+    {
+      "pattern": "\\b(brother|epson|ricoh|dayma|kodak)\\b",
+      "family": "Impresión",
+      "subfamily": "Consumibles"
+    },
+    {
+      "pattern": "\\b(startech|ewent|conceptronic|tooq|equip|qcharx)\\b",
+      "family": "Conectividad y Soportes",
+      "subfamily": "Accesorios y adaptadores"
+    },
+    {
+      "pattern": "\\b(bandai|mattel|jazwares|paladone|qiyi|moyu|shengshou)\\b",
+      "family": "Juegos y Ocio",
+      "subfamily": "Juguetes y hobbies"
+    },
+    {
+      "pattern": "\\b(thulos|nevir|silver electronics|yoevu)\\b",
+      "family": "Electrohogar",
+      "subfamily": "Hogar y climatización"
+    },
+    {
+      "pattern": "\\b(d-link|ubiquiti|zyxel)\\b",
+      "family": "Redes",
+      "subfamily": "Networking"
+    },
+    {
+      "pattern": "\\b(muvit)\\b",
+      "family": "Telefonía",
+      "subfamily": "Fundas y protección"
+    },
+    {
+      "pattern": "\\b(pocketbook)\\b",
+      "family": "Tablets",
+      "subfamily": "eReaders"
+    },
+    {
+      "pattern": "\\b(paladone|cinereplicas|teknofun|madcow)\\b",
+      "family": "Merchandising",
+      "subfamily": "Decoración y regalo"
+    },
+    {
+      "pattern": "\\b(mars gaming)\\b",
+      "family": "Gaming",
+      "subfamily": "Accesorios gaming"
+    },
+    {
+      "pattern": "\\b(hp|canon|xerox|pantum|kodak)\\b",
+      "family": "Impresión",
+      "subfamily": "Consumibles"
+    },
+    {
+      "pattern": "\\b(belkin|phasak|coolbox|nanocable|i-?tec|wp european cabling solution|gembird|targus|unykach|riello)\\b",
+      "family": "Conectividad y Soportes",
+      "subfamily": "Accesorios y adaptadores"
+    },
+    {
+      "pattern": "\\b(tp-link|tenda|fritz|mercusys|level one)\\b",
+      "family": "Redes",
+      "subfamily": "Networking"
+    },
+    {
+      "pattern": "\\b(ichiban kuji|prime 3d|ultimate guard|semic studios|gb eye|grupo erik|loungefly|cyp brands|first 4 figures|diamond select toys|the loyal subjects|mezco toyz|gamegenic|studio ghibli|ivrea|tranjis games|wizards of the coast|arcade1up|bestway)\\b",
+      "family": "Juegos y Ocio",
+      "subfamily": "Juguetes y hobbies"
+    },
+    {
+      "pattern": "\\b(sd\\s?games|devir|asmodee|ravensburger)\\b",
+      "family": "Juegos y Ocio",
+      "subfamily": "Juegos de mesa"
+    },
+    {
+      "pattern": "\\b(plastoy|mcfarlane toys|wand company|factory entertainment|infinity studios|nemesis now|toynami|sega|woodwork|wowwee|wow stuff|amont|goliath)\\b",
+      "family": "Coleccionismo",
+      "subfamily": "Figuras y merchandising"
+    },
+    {
+      "pattern": "\\b(cerd[aá]|pyramid|half moon bay|the carat shop|eleven force|moriarty art project|minix|#?candy)\\b",
+      "family": "Merchandising",
+      "subfamily": "Textil y hogar"
+    },
+    {
+      "pattern": "\\b(tts|intelino|ozobot|makey makey|raspberry)\\b",
+      "family": "Educación y Maker",
+      "subfamily": "Robótica"
+    },
+    {
+      "pattern": "\\b(cecotec|bourgini|aiwa|select brands)\\b",
+      "family": "Electrohogar",
+      "subfamily": "Hogar y climatización"
+    },
+    {
+      "pattern": "\\b(fellowes)\\b",
+      "family": "Oficina",
+      "subfamily": "Equipamiento"
+    },
+    {
+      "pattern": "\\b(fujifilm)\\b",
+      "family": "Fotografía",
+      "subfamily": "Cámaras instantáneas"
+    }
+  ],
+  "keywordRules": [
+    {
+      "pattern": "\\b(portatil|laptop|notebook|macbook)\\b",
+      "family": "Portátiles",
+      "subfamily": "Portátiles"
+    },
+    {
+      "pattern": "\\b(laptop\\w*|tablet\\w*|tabler\\w*)\\b",
+      "family": "Portátiles",
+      "subfamily": "Portátiles"
+    },
+    {
+      "pattern": "\\b(ordenador|pc\\s?sobremesa|all\\s?in\\s?one|aio)\\b",
+      "family": "Ordenadores",
+      "subfamily": "Sobremesa"
+    },
+    {
+      "pattern": "\\b(raton|mouse)\\b",
+      "family": "Periféricos",
+      "subfamily": "Ratones"
+    },
+    {
+      "pattern": "\\b(auricular(?:es)?|auricualres|headset|earbuds|altavoz(?:es)?|altavoces?|barra de sonido|barra sonido|soundbar|microcadena|microfono|micr[oó]fono|airpods)\\b",
+      "family": "Audio",
+      "subfamily": "Audio y voz"
+    },
+    {
+      "pattern": "\\b(funko|figura|wfigura|megafigura|minifigura|peluche|nendoroid|statue|estatua|q\\s?posket|tamashii|banpresto|playmobil|lego)\\b",
+      "family": "Coleccionismo",
+      "subfamily": "Figuras y merchandising"
+    },
+    {
+      "pattern": "\\b(juego de mesa|board game|puzzle|expansion|expansi[oó]n|ampliaci[oó]n|lcg|pegi|smart 10|listos listas y listakens|crash octopus|miercoles: criaturas)\\b",
+      "family": "Juegos y Ocio",
+      "subfamily": "Juegos de mesa"
+    },
+    {
+      "pattern": "\\b(juego ps4|juego ps5|playstation|xbox|nintendo|arcade|consola)\\b",
+      "family": "Gaming",
+      "subfamily": "Consolas y accesorios"
+    },
+    {
+      "pattern": "\\b(juguete|muneca|muñeca|tamagotchi|cubo de rubik|rubik|maqueta|set construccion|set construcción|trading card|booster box|cartas)\\b",
+      "family": "Juegos y Ocio",
+      "subfamily": "Juguetes y hobbies"
+    },
+    {
+      "pattern": "\\b(taza|cojin|coj[ií]n|delantal|camiseta|llavero|mochila|cartera|bolso|botella|vaso|tumbler)\\b",
+      "family": "Merchandising",
+      "subfamily": "Textil y hogar"
+    },
+    {
+      "pattern": "\\b(felpudo|poster|p[oó]ster|comic|comics|replica|cuaderno|calendario de adviento|calcetines?|gorra|visera|cepillo de pelo|collar|marco 3d|decoraci[oó]n de navidad|sujetalibros|hucha|doormat|mascot collection)\\b",
+      "family": "Merchandising",
+      "subfamily": "Textil y hogar"
+    },
+    {
+      "pattern": "\\b(funda|carcasa|cover|protector)\\b",
+      "family": "Telefonía",
+      "subfamily": "Fundas y protección"
+    },
+    {
+      "pattern": "\\b(lampara|l[aá]mpara|bombilla|guirnalda|neon|ne[oó]n|barra de luz|anillo de luz|panel acustico|panel ac[uú]stico|iluminaci[oó]n modular|astral|luz\\s?alb\\d*)\\b",
+      "family": "Iluminación",
+      "subfamily": "Lámparas y LED"
+    },
+    {
+      "pattern": "\\b(ebook|e-reader|ereader|inkpad|kindle|pocketbook)\\b",
+      "family": "Tablets",
+      "subfamily": "eReaders"
+    },
+    {
+      "pattern": "\\b(smartwatch|watch\\s?s\\d+|watch ultra|watch series)\\b",
+      "family": "Wearables",
+      "subfamily": "Smartwatch"
+    },
+    {
+      "pattern": "\\b(tv|smart tv|qled|oled|uhd|4k|receptor satelite|dvb-s2)\\b",
+      "family": "TV y vídeo",
+      "subfamily": "Televisión y TDT"
+    },
+    {
+      "pattern": "\\b(antivirus|licencia electronica|licencia electrónica|esd|software)\\b",
+      "family": "Software",
+      "subfamily": "Licencias"
+    },
+    {
+      "pattern": "\\b(office 20\\d\\d|windows 11|windows 10|vpn|microsoft office)\\b",
+      "family": "Software",
+      "subfamily": "Licencias"
+    },
+    {
+      "pattern": "\\b(sai|ups|salicru)\\b",
+      "family": "Energía",
+      "subfamily": "SAI"
+    },
+    {
+      "pattern": "\\b(bateria|bater[ií]a)\\b",
+      "family": "Energía",
+      "subfamily": "Baterías"
+    },
+    {
+      "pattern": "\\b(pilas?|alcalina)\\b",
+      "family": "Energía",
+      "subfamily": "Pilas y baterías"
+    },
+    {
+      "pattern": "\\b(teclado|keyboard)\\b",
+      "family": "Periféricos",
+      "subfamily": "Teclados"
+    },
+    {
+      "pattern": "\\b(alfombrilla|reposamuñecas|reposamunecas)\\b",
+      "family": "Periféricos",
+      "subfamily": "Accesorios"
+    },
+    {
+      "pattern": "\\b(webcam|camara web|c[aá]mara web)\\b",
+      "family": "Periféricos",
+      "subfamily": "Webcams"
+    },
+    {
+      "pattern": "\\b(placa base|motherboard)\\b",
+      "family": "Componentes",
+      "subfamily": "Placas base"
+    },
+    {
+      "pattern": "\\b(procesador|intel\\s?i[3579]|ryzen|threadripper|cpu|lga\\s?1700|am4|am5)\\b",
+      "family": "Componentes",
+      "subfamily": "Procesadores"
+    },
+    {
+      "pattern": "\\b(tarjeta grafica|tarjeta gr[aá]fica|geforce|radeon|rtx|gddr6|gddr7)\\b",
+      "family": "Componentes",
+      "subfamily": "Tarjetas gráficas"
+    },
+    {
+      "pattern": "\\b(tarjeta de red|10gbe|ethernet adapter|adaptador de red|nic)\\b",
+      "family": "Redes",
+      "subfamily": "Adaptadores de red"
+    },
+    {
+      "pattern": "\\b(barebone|nuc|mini pc)\\b",
+      "family": "Ordenadores",
+      "subfamily": "Barebones"
+    },
+    {
+      "pattern": "\\b(mando|gamepad|joystick|controller)\\b",
+      "family": "Gaming",
+      "subfamily": "Mandos y accesorios"
+    },
+    {
+      "pattern": "\\b(iphone|smartphone|movil|tel[eé]fono|telefono basico|telfono)\\b",
+      "family": "Telefonía",
+      "subfamily": "Smartphones"
+    },
+    {
+      "pattern": "\\b(powerbank|cargador|carga r[aá]pida|mag safe|magsafe)\\b",
+      "family": "Telefonía",
+      "subfamily": "Carga y energía"
+    },
+    {
+      "pattern": "\\b(lapiz digital|l[aá]piz digital|apple pencil|surface pen|t-pen)\\b",
+      "family": "Tablets",
+      "subfamily": "Lápices y accesorios"
+    },
+    {
+      "pattern": "\\b(altavoz(?:es)?|altavoces?|speaker|2\\.0|2\\.1|5\\.1|sound system|tarjeta de sonido|sound card)\\b",
+      "family": "Audio",
+      "subfamily": "Altavoces"
+    },
+    {
+      "pattern": "\\b(monitor|pantalla|\\d{2}(?:\\.\\d)?[\"”']\\s*$|\\d{2}\\.\\d[\"”'])\\b",
+      "family": "Monitores",
+      "subfamily": "Monitores"
+    },
+    {
+      "pattern": "\\b(soporte|vesa|pared|techo|suelo|brazo articulado)\\b",
+      "family": "Soportes",
+      "subfamily": "TV y monitores"
+    },
+    {
+      "pattern": "\\b(router|switch|access point|punto de acceso|mesh|wifi 6|wifi7|wifi 7|repetidor extensor)\\b",
+      "family": "Redes",
+      "subfamily": "Networking"
+    },
+    {
+      "pattern": "\\b(punto acceso|antena wifi)\\b",
+      "family": "Redes",
+      "subfamily": "Networking"
+    },
+    {
+      "pattern": "\\b(sfp|transceptor|modulo de fibra|m[oó]dulo de fibra|poe)\\b",
+      "family": "Redes",
+      "subfamily": "Transceptores y PoE"
+    },
+    {
+      "pattern": "\\b(regleta|powerline|plc|cabling|keystone|acoplador|crimpadora|pasa cables|sujeta cables)\\b",
+      "family": "Conectividad y Soportes",
+      "subfamily": "Accesorios y adaptadores"
+    },
+    {
+      "pattern": "\\b(dock|docking|hub usb|hub tipo c|adaptador usb|adaptador wifi|receptor de red)\\b",
+      "family": "Periféricos",
+      "subfamily": "Conectividad"
+    },
+    {
+      "pattern": "\\b(cable|cables|bridas|sujecion para cables|rj45|cat6|cat 6|displayport|vga|ethernet|latiguillo|hdmi|usb tipo c)\\b",
+      "family": "Cables y Conectores",
+      "subfamily": "Cables"
+    },
+    {
+      "pattern": "\\b(tablet|ipad)\\b",
+      "family": "Tablets",
+      "subfamily": "Tablets"
+    },
+    {
+      "pattern": "\\b(impresora|multifuncion|multifunci[oó]n|laser|inyecci[oó]n|pixma|maxify|deskjet|officejet|i-sensys|toner|cartucho|unidad duplex|unidad d[uú]plex)\\b",
+      "family": "Impresión",
+      "subfamily": "Impresoras"
+    },
+    {
+      "pattern": "\\b(plotter|designjet|imageprograf)\\b",
+      "family": "Impresión",
+      "subfamily": "Plotters"
+    },
+    {
+      "pattern": "\\b(escaner|esc[aá]ner|scanjet|scanner)\\b",
+      "family": "Impresión",
+      "subfamily": "Escáneres"
+    },
+    {
+      "pattern": "\\b(cinta laminada|tambor|cabezal|kit de mantenimiento|etiquetas?|papel foto|papel)\\b",
+      "family": "Impresión",
+      "subfamily": "Consumibles"
+    },
+    {
+      "pattern": "\\b(multipack|cartuchos?|rodillos?|bote residual|unidad de imagen|jetdirect|fusor)\\b",
+      "family": "Impresión",
+      "subfamily": "Consumibles"
+    },
+    {
+      "pattern": "\\b(cd-r|cd-rw|dvd-r|dvd\\+r|dvd-rw|regrabadora|unidad optica|unidad óptica|tarrina)\\b",
+      "family": "Almacenamiento",
+      "subfamily": "Soportes ópticos"
+    },
+    {
+      "pattern": "\\b(servidor|server|rack)\\b",
+      "family": "Servidores",
+      "subfamily": "Servidores"
+    },
+    {
+      "pattern": "\\b(gram|thinkpad|vivobook|zenbook|ideapad|elitebook|probook)\\b",
+      "family": "Portátiles",
+      "subfamily": "Portátiles"
+    },
+    {
+      "pattern": "\\b(fuente\\s+(?:de\\s+)?alimentacion|fuente.*alimentacion|fuente alimentación|psu|atx|sfx|tfx)\\b",
+      "family": "Componentes",
+      "subfamily": "Fuentes"
+    },
+    {
+      "pattern": "\\b(ddr3|ddr3l|ddr4|ddr5|memoria ram|udimm|sodimm|pc4|pc5)\\b",
+      "family": "Componentes",
+      "subfamily": "Memoria RAM"
+    },
+    {
+      "pattern": "\\b(ssd|hdd|disco duro|wd red|nvme|m\\.2|msata|pendrive|unidad flash|memoria usb|micro sd|sdxc|datatraveler|extreme portable|lesen/schreiben)\\b",
+      "family": "Almacenamiento",
+      "subfamily": "SSD y HDD"
+    },
+    {
+      "pattern": "\\b(uhs|clase\\s?10|sdhc|secure digital)\\b",
+      "family": "Almacenamiento",
+      "subfamily": "Tarjetas de memoria"
+    },
+    {
+      "pattern": "\\b(ventilador caja|ventilador auxiliar|ventilador disipador|base refrigeracion|base refrigeraci[oó]n|fan|argb)\\b",
+      "family": "Componentes",
+      "subfamily": "Refrigeración"
+    },
+    {
+      "pattern": "\\b(refrigeracion liquida|refrigeraci[oó]n l[ií]quida|liquid cooling|frgb|120mm|240mm|360mm)\\b",
+      "family": "Componentes",
+      "subfamily": "Refrigeración"
+    },
+    {
+      "pattern": "\\b(pasta termica|pasta t[eé]rmica|thermal paste)\\b",
+      "family": "Componentes",
+      "subfamily": "Refrigeración"
+    },
+    {
+      "pattern": "\\b(ventilador de mesa|ventilador de pie|aire acondicionado|purificador|humidificador|calientacamas|sandwichera|gofrera|arrocera|plancha|cortapelos|cortapelo|hervidora|amasadora|multicazuela|secador|exprimidor|irrigador|cepillo dental electrico|cepillo dental el[eé]ctrico)\\b",
+      "family": "Electrohogar",
+      "subfamily": "Hogar y climatización"
+    },
+    {
+      "pattern": "\\b(silla gaming|escritorio|soporte de pared|toallero|juego de bistr[oó]|cesped artificial|césped artificial)\\b",
+      "family": "Hogar y Oficina",
+      "subfamily": "Equipamiento"
+    },
+    {
+      "pattern": "\\b(destructora de documentos|destructora|trituradora|reposapies|reposapi[eé]s)\\b",
+      "family": "Oficina",
+      "subfamily": "Destructoras"
+    },
+    {
+      "pattern": "\\b(secador|exprimidor|cafetera|licuadora|batidora|toallero electrico|toallero el[eé]ctrico)\\b",
+      "family": "Electrohogar",
+      "subfamily": "Pequeño electrodoméstico"
+    },
+    {
+      "pattern": "\\b(drone|walkie talkie|walkie|proyector|gps tomtom|dash cam|camara dash|c[aá]mara dash)\\b",
+      "family": "Electrónica",
+      "subfamily": "Dispositivos especiales"
+    },
+    {
+      "pattern": "\\b(radio|transmisor fm|reproductor cd|mezclador dj|amplificador estereo|amplificador est[eé]reo|kit de sonido)\\b",
+      "family": "Audio",
+      "subfamily": "Equipos de sonido"
+    },
+    {
+      "pattern": "\\b(paddle surf|hidro-force|hydro-force|piscina desmontable)\\b",
+      "family": "Deporte y Aire libre",
+      "subfamily": "Piscina y playa"
+    },
+    {
+      "pattern": "\\b(maletin|malet[ií]n|bandolera|backpack|organizador de viaje)\\b",
+      "family": "Portátiles",
+      "subfamily": "Accesorios"
+    },
+    {
+      "pattern": "\\b(candado|higienica|higi[eé]nica|hidroalcoholica|hidroalcoh[oó]lica|gel hidroalcoholico|dispensador gel|dispensador.*gel|mascarilla|ffp2|kn95)\\b",
+      "family": "Oficina",
+      "subfamily": "Higiene y seguridad"
+    },
+    {
+      "pattern": "\\b(extension de garantia|extensi[oó]n de garant[ií]a|garantia extendida|garant[ií]a extendida|ampliacion de garantia|ampliaci[oó]n de garant[ií]a)\\b",
+      "family": "Servicios",
+      "subfamily": "Garantías"
+    },
+    {
+      "pattern": "\\b(robot tts|bee-bot|blue-bot|smart train|placa electronica|placa electr[oó]nica|3d-pen|filamento|raspberry pi|starter kit)\\b",
+      "family": "Educación y Maker",
+      "subfamily": "Robótica"
+    },
+    {
+      "pattern": "\\b(tab p11|tab m10|gravity 5 pro|\\btablet\\b.*android|android\\s?1[234])\\b",
+      "family": "Tablets",
+      "subfamily": "Tablets"
+    },
+    {
+      "pattern": "\\b(camara seguridad|c[aá]mara seguridad|vision nocturna|control de acceso|lector rfid)\\b",
+      "family": "Hogar inteligente",
+      "subfamily": "Seguridad y domótica"
+    },
+    {
+      "pattern": "\\b(loop apple.*reloj inteligente|loop.*42mm milanese)\\b",
+      "family": "Wearables",
+      "subfamily": "Accesorios smartwatch"
+    },
+    {
+      "pattern": "\\b(panel solar|medidor de corriente inteligente)\\b",
+      "family": "Energía",
+      "subfamily": "Energía solar y medición"
+    },
+    {
+      "pattern": "\\b(paño de limpieza|pano de limpieza|limpiador de aire comprimido)\\b",
+      "family": "Oficina",
+      "subfamily": "Limpieza"
+    },
+    {
+      "pattern": "\\b(tarjeta wifi|wifi pci express|lector de tarjetas|lector de tarjeta|keycaps|kit de teclas)\\b",
+      "family": "Periféricos",
+      "subfamily": "Conectividad"
+    },
+    {
+      "pattern": "\\b(digitalizador de firma|firma wacom|control de acceso|lector rfid)\\b",
+      "family": "Oficina",
+      "subfamily": "Equipamiento"
+    },
+    {
+      "pattern": "\\b(mesa de entrada|videobar|video bar)\\b",
+      "family": "Hogar y Oficina",
+      "subfamily": "Equipamiento"
+    },
+    {
+      "pattern": "\\b(caja herramientas|terminales electricos|tiras de velcro|caja de conexiones|armario\\s+lanberg|\\b42u\\b)\\b",
+      "family": "Conectividad y Soportes",
+      "subfamily": "Accesorios y adaptadores"
+    },
+    {
+      "pattern": "\\b(sempron|socket\\s?754)\\b",
+      "family": "Componentes",
+      "subfamily": "Procesadores"
+    },
+    {
+      "pattern": "\\b(camera license pack|camera license|licencia\\s?pack)\\b",
+      "family": "Software",
+      "subfamily": "Licencias"
+    },
+    {
+      "pattern": "\\b(emisor fm|car fm)\\b",
+      "family": "Audio",
+      "subfamily": "Equipos de sonido"
+    },
+    {
+      "pattern": "\\b(sa243|\\b250nits\\b)\\b",
+      "family": "Monitores",
+      "subfamily": "Monitores"
+    }
+  ],
+  "lastResortRules": [
+    {
+      "pattern": "\\b(ps4|ps5|playstation|xbox|nintendo|arcade|consola retro|volante)\\b",
+      "family": "Gaming",
+      "subfamily": "Consolas y accesorios"
+    },
+    {
+      "pattern": "\\b(lector codigo|codigo de barras|smart card|dni electronico|calculadora|bandeja de entrada|cajon portamonedas|cajonera)\\b",
+      "family": "Oficina",
+      "subfamily": "Equipamiento"
+    },
+    {
+      "pattern": "\\b(aspiradora|freidora|tostadora|hervidor|sarten|sart[eé]n|bascula|b[aá]scula|afeitadora|depiladora|termometro|term[oó]metro|hidroalcoholic|desinfectador|esterilizador)\\b",
+      "family": "Electrohogar",
+      "subfamily": "Hogar y salud"
+    },
+    {
+      "pattern": "\\b(maletin|malet[ií]n|bolsa|bandolera|mochila)\\b",
+      "family": "Portátiles",
+      "subfamily": "Accesorios"
+    },
+    {
+      "pattern": "\\b(camara de seguridad|c[aá]mara de seguridad|vigilancia|nvr|dvr)\\b",
+      "family": "Hogar inteligente",
+      "subfamily": "Seguridad"
+    },
+    {
+      "pattern": "\\b(placa arduino|arduino|micro:bit|microbit|robotica|rob[oó]tica|kit educativo)\\b",
+      "family": "Educación y Maker",
+      "subfamily": "Robótica"
+    },
+    {
+      "pattern": "\\b(adaptador|hub|dock|lector tarjeta|receptor|transmisor|keystone|crimpadora|acoplador)\\b",
+      "family": "Conectividad y Soportes",
+      "subfamily": "Accesorios y adaptadores"
+    },
+    {
+      "pattern": "\\b(set|surtido|display|expositor|modelo|model kit|mini set)\\b",
+      "family": "Juegos y Ocio",
+      "subfamily": "Juguetes y hobbies"
+    }
+  ],
+  "finalFallback": {
+    "family": "Varios",
+    "subfamily": "Miscelánea tecnológica"
+  },
+  "genericValues": [
+    "familia",
+    "subfamilia",
+    "pcs sobremesa",
+    "pc sobremesa",
+    "ordenadores y servidores"
+  ]
+}

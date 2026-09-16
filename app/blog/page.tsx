@@ -3,14 +3,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { getPosts } from '@/lib/wordpress';
+import { AdSense } from '@/components/AdSense';
+import { absoluteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Blog | Inforvel',
   description: 'Consejos, tutoriales y noticias sobre tecnología',
+  alternates: {
+    canonical: absoluteUrl('/blog'),
+  },
+  openGraph: {
+    title: 'Blog | Inforvel',
+    description: 'Consejos, tutoriales y noticias sobre tecnología',
+    url: absoluteUrl('/blog'),
+  },
 };
 
+export const revalidate = 60;
+export const dynamic = 'force-dynamic';
+
 export default async function BlogPage() {
-  const posts = await getPosts({ per_page: 12 });
+  let posts = await getPosts({ per_page: 12 });
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -93,6 +106,9 @@ export default async function BlogPage() {
             })}
           </div>
         )}
+
+        {/* AdSense - parte inferior del blog */}
+        <AdSense adSlot="4838089477" className="mt-12" />
       </div>
     </div>
   );

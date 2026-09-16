@@ -1,0 +1,4 @@
+{
+  "rotation": ["HP", "Lenovo", "MSI", "Apple", "Samsung", "Xiaomi", "ASUS", "Acer"],
+  "notes": "La marca activa cambia por semana ISO en rotación circular"
+}

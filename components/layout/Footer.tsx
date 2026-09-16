@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Instagram, Facebook, CreditCard, Smartphone, Wallet } from 'lucide-react';
+import { Instagram, Facebook, MapPin, CreditCard, Smartphone, Wallet } from 'lucide-react';
 import { WCCategory } from '@/lib/woocommerce';
+import { CookiePreferencesButton } from '@/components/CookiePreferencesButton';
+import { GOOGLE_REVIEWS_URL } from '@/lib/seo';
 
 interface FooterProps {
   categories?: WCCategory[];
@@ -35,6 +37,9 @@ export function Footer({ categories = [] }: FooterProps) {
               <a href="https://www.facebook.com/people/Inforvelonline/61556033247281/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Facebook de Inforvel">
                 <Facebook className="w-5 h-5" />
               </a>
+              <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Inforvel en Google Maps">
+                <MapPin className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -60,6 +65,11 @@ export function Footer({ categories = [] }: FooterProps) {
                 <a href="https://www.inforvel.online/blog/mantenimiento-de-ordenadores-como-mantener-tu-pc-a-punto-inforvel-cordoba" className="hover:text-white transition-colors">
                   Mantenimiento
                 </a>
+              </li>
+              <li>
+                <Link href="/servicios-pymes-empresas-cordoba" className="font-medium text-sky-400 transition-colors hover:text-sky-300">
+                  Servicios para PYMES
+                </Link>
               </li>
             </ul>
           </div>
@@ -112,6 +122,9 @@ export function Footer({ categories = [] }: FooterProps) {
                 <Link href="/desistimiento" className="hover:text-white transition-colors">
                   Devoluciones
                 </Link>
+              </li>
+              <li>
+                <CookiePreferencesButton />
               </li>
             </ul>
           </div>

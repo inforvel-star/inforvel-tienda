@@ -1,12 +1,14 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, type FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
 import { Search, X } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { woocommerce, WCProduct } from '@/lib/woocommerce';
+import { WCProduct } from '@/lib/woocommerce';
+import { ProductBadges } from '@/components/products/ProductBadges';
 
 interface SearchBarProps {
   isOpen: boolean;
@@ -14,6 +16,7 @@ interface SearchBarProps {
 }
 
 export function SearchBar({ isOpen, onClose }: SearchBarProps) {
+  const router = useRouter();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<WCProduct[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -35,19 +38,56 @@ export function SearchBar({ isOpen, onClose }: SearchBarProps) {
   }, [isOpen]);
 
   useEffect(() => {
+    const normalizedQuery = query.trim();
+    if (normalizedQuery.length < 2) {
+      setResults([]);
+      setIsLoading(false);
+      return;
+    }
+
+    const controller = new AbortController();
     const timeoutId = setTimeout(async () => {
-      if (query.trim().length >= 2) {
-        setIsLoading(true);
-        const products = await woocommerce.searchProducts(query);
-        setResults(products);
-        setIsLoading(false);
-      } else {
-        setResults([]);
+      try {
+        const response = await fetch(`/api/search?q=${encodeURIComponent(normalizedQuery)}`, {
+          signal: controller.signal,
+        });
+        if (response.ok) {
+          const products = await response.json();
+          setResults(products);
+        } else {
+          setResults([]);
+        }
+      } catch (error) {
+        if (!controller.signal.aborted) {
+          console.error("Search error:", error);
+          setResults([]);
+        }
+      } finally {
+        if (!controller.signal.aborted) {
+          setIsLoading(false);
+        }
       }
     }, 300);
 
-    return () => clearTimeout(timeoutId);
+    return () => {
+      clearTimeout(timeoutId);
+      controller.abort();
+    };
   }, [query]);
+
+  const handleQueryChange = (value: string) => {
+    setQuery(value);
+    setResults([]);
+    setIsLoading(value.trim().length >= 2);
+  };
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const normalizedQuery = query.trim();
+    if (!normalizedQuery) return;
+    onClose();
+    router.push(`/tienda?search=${encodeURIComponent(normalizedQuery)}`);
+  };
 
   if (!isOpen) return null;
 
@@ -60,20 +100,20 @@ export function SearchBar({ isOpen, onClose }: SearchBarProps) {
 
       <div className="fixed top-0 left-0 right-0 z-50 p-4 sm:p-6 animate-in slide-in-from-top">
         <div className="max-w-2xl mx-auto bg-background border border-border rounded-2xl shadow-2xl overflow-hidden">
-          <div className="flex items-center gap-3 p-4 border-b border-border">
+          <form onSubmit={handleSubmit} className="flex items-center gap-3 p-4 border-b border-border">
             <Search className="w-5 h-5 text-muted-foreground shrink-0" />
             <Input
               ref={inputRef}
               type="text"
               placeholder="Buscar productos..."
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(e) => handleQueryChange(e.target.value)}
               className="border-0 focus-visible:ring-0 text-lg"
             />
-            <Button variant="ghost" size="icon" onClick={onClose}>
+            <Button type="button" variant="ghost" size="icon" onClick={onClose}>
               <X className="w-5 h-5" />
             </Button>
-          </div>
+          </form>
 
           {query.trim().length >= 2 && (
             <div className="max-h-96 overflow-y-auto">
@@ -96,6 +136,12 @@ export function SearchBar({ isOpen, onClose }: SearchBarProps) {
                           alt={product.name}
                           fill
                           className="object-cover"
+                        />
+                        <ProductBadges
+                          product={product}
+                          variant="icons"
+                          limit={1}
+                          className="absolute right-1 top-1 z-10"
                         />
                       </div>
                       <div className="flex-1 min-w-0">

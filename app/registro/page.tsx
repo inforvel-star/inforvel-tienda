@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
-import { ShoppingBag } from 'lucide-react';
+import { ShoppingBag, Loader2 } from 'lucide-react';
 
 export default function RegistroPage() {
   const router = useRouter();
@@ -36,13 +36,31 @@ export default function RegistroPage() {
     setIsLoading(true);
 
     try {
-      toast.info('El registro de nuevos usuarios debe realizarse directamente en WooCommerce');
+      const response = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        toast.error(data.error || 'Error al crear la cuenta');
+        return;
+      }
+
+      toast.success('¡Cuenta creada correctamente! Ya puedes iniciar sesión.');
       setTimeout(() => {
         router.push('/login');
-      }, 2000);
+      }, 1500);
     } catch (error) {
       console.error('Error:', error);
-      toast.error('Error al procesar la solicitud');
+      toast.error('Error de conexión. Inténtalo de nuevo.');
     } finally {
       setIsLoading(false);
     }
@@ -78,6 +96,7 @@ export default function RegistroPage() {
                   }
                   placeholder="Juan"
                   required
+                  disabled={isLoading}
                 />
               </div>
               <div>
@@ -91,6 +110,7 @@ export default function RegistroPage() {
                   }
                   placeholder="Pérez"
                   required
+                  disabled={isLoading}
                 />
               </div>
             </div>
@@ -106,6 +126,7 @@ export default function RegistroPage() {
                 }
                 placeholder="tu@email.com"
                 required
+                disabled={isLoading}
               />
             </div>
 
@@ -120,6 +141,7 @@ export default function RegistroPage() {
                 }
                 placeholder="••••••••"
                 required
+                disabled={isLoading}
               />
             </div>
 
@@ -134,6 +156,7 @@ export default function RegistroPage() {
                 }
                 placeholder="••••••••"
                 required
+                disabled={isLoading}
               />
             </div>
 
@@ -143,7 +166,14 @@ export default function RegistroPage() {
               size="lg"
               disabled={isLoading}
             >
-              {isLoading ? 'Creando cuenta...' : 'Crear cuenta'}
+              {isLoading ? (
+                <>
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                  Creando cuenta...
+                </>
+              ) : (
+                'Crear cuenta'
+              )}
             </Button>
           </form>
 

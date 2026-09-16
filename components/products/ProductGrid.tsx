@@ -4,6 +4,7 @@ import { WCProduct } from '@/lib/woocommerce';
 import { ProductCard } from './ProductCard';
 import { useCartStore } from '@/lib/store/cartStore';
 import { toast } from 'sonner';
+import { isDisplayableProduct } from '@/lib/productVisibility';
 
 interface ProductGridProps {
   products: WCProduct[];
@@ -11,6 +12,7 @@ interface ProductGridProps {
 
 export function ProductGrid({ products }: ProductGridProps) {
   const addItem = useCartStore((state) => state.addItem);
+  const visibleProducts = products.filter(isDisplayableProduct);
 
   const handleAddToCart = (product: WCProduct) => {
     addItem({
@@ -23,10 +25,12 @@ export function ProductGrid({ products }: ProductGridProps) {
 
     toast.success('Producto añadido al carrito', {
       description: product.name,
+      duration: 3000,
+      closeButton: true,
     });
   };
 
-  if (products.length === 0) {
+  if (visibleProducts.length === 0) {
     return (
       <div className="text-center py-12">
         <p className="text-muted-foreground">No se encontraron productos</p>
@@ -35,8 +39,8 @@ export function ProductGrid({ products }: ProductGridProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {products.map((product) => (
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+      {visibleProducts.map((product) => (
         <ProductCard
           key={product.id}
           product={product}

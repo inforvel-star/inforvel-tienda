@@ -1,0 +1,3645 @@
+{
+  "sourceCategoryId": 89,
+  "changes": [
+    {
+      "product": {
+        "id": 508683,
+        "sku": "MGS-DSP0000027789",
+        "name": "Bolsa HP RENEW BUSINESS 17.3\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 504257,
+        "sku": "DSP0000030519",
+        "name": "LIBRO ELECTRONICO EBOOK SPC DICKENS LIGHT2 PRO 6\"/ 8GB/ MICRO SD/ NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 448,
+        "targetName": "E-books",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 448,
+          "name": "E-books",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 504255,
+        "sku": "DSP0000030518",
+        "name": "LIBRO ELECTRONICO EBOOK SPC DICKENS LIGHT2 PRO 6\"/ 8GB/ MICRO SD/ AZUL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 448,
+        "targetName": "E-books",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 448,
+          "name": "E-books",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 504084,
+        "sku": "DSP0000029867",
+        "name": "ALFOMBRILLA MARS GAMING 360X260MM RAINBOW",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 118,
+        "targetName": "Alfombrillas",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 118,
+          "name": "Alfombrillas",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 503984,
+        "sku": "DSP0000029429",
+        "name": "ORGANIZADOR DE VIAJE RIVACASE 5633 NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 503866,
+        "sku": "DSP0000029257",
+        "name": "BASE DE REFRIGERACION MARS GAMING MNBC23W PARA PORTATIL 16\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 503863,
+        "sku": "DSP0000029256",
+        "name": "BASE DE REFRIGERACION MARS GAMING MNBC13W PARA PORTATIL 17\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 503860,
+        "sku": "DSP0000029255",
+        "name": "BASE DE REFRIGERACION MARS GAMING MNBC13 PARA PORTATIL 17\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 501097,
+        "sku": "DSP0000006300",
+        "name": "ESTUCHE TOOQ TQBC-E2501 PARA CAJA EXTERNA 2.5\" NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 499882,
+        "sku": "MGS-MGS0000001410",
+        "name": "PROYECTOR EPSON EB-X49 3LCD/ 3600 LUMENS/ XGA/ HDMI/ USB/ WIFI OPCIONAL/ PROYECTOR PORTATIL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 152,
+        "targetName": "Proyección",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 152,
+          "name": "Proyección",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 499066,
+        "sku": "MGS-DSP0000038564",
+        "name": "TABLER ACER ICONIA V11 11\" 8GB 256GB ANDR",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 107,
+        "targetName": "Tablets",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 107,
+          "name": "Tablets",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 498531,
+        "sku": "MGS-DSP0000035086",
+        "name": "TROLLEY TARGUS CITYSMART ROLLER PARA PORTATIL 15.6\" NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 496651,
+        "sku": "MGS-DSP0000030975",
+        "name": "BOLSO TARGUS AVILA PARA PORTATIL 16\" FRENCH OAK",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 496624,
+        "sku": "MGS-DSP0000030970",
+        "name": "BOLSO TARGUS AVILA PARA PORTATIL 16\" MIDNIGHT NAVY",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 495671,
+        "sku": "MGS-DSP0000027818",
+        "name": "Bolsa HP RENEW EXECUTIVE 15.6\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 495318,
+        "sku": "MGS-DSP0000027277",
+        "name": "TROLLEY PORTATIL TARGUS CORPORATE TRAVELLER 16\" NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 494252,
+        "sku": "MGS-DSP0000024448",
+        "name": "REPOSAPIES TOOQ CONFORT AJUSTABLE GRIS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 210,
+        "targetName": "Muebles de oficina",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 210,
+          "name": "Muebles de oficina",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 494029,
+        "sku": "DSP0000009561",
+        "name": "BASE REFRIGERADORA PARA PORTATIL TARGUS 15-17\" GRIS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 493693,
+        "sku": "MGS0000027528",
+        "name": "VENTILADOR PORTATIL THULOS TH-MFN-01 BLANCO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 493579,
+        "sku": "MGS0000005885",
+        "name": "ALTAVOZ PORTATIL FONESTAR AMPLY-T / 100W / CON MICROFONO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 493436,
+        "sku": "CALIFORNIA",
+        "name": "ALTAVOZ PORTATIL FONESTAR CALIFORNIA 200W / JACK / AUXILIAR / FUNCION KARAOKE / BLUETOOTH / USB / MP3 / RADIO FM / MICROFONO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 465216,
+        "sku": "DSP0000042305",
+        "name": "CABLE DE SEGURIDAD STARTECH PARA PORTATIL 1.5M CLAVE",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 465214,
+        "sku": "DSP0000042299",
+        "name": "KIT CABLE SEGURIDAD STARTECH PARA PORTATIL 3M CLAVE",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 464040,
+        "sku": "DSP0000042106",
+        "name": "CARCASA TARGUS HYPERSHIELD PARA PORTATIL 13\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 461565,
+        "sku": "MGS0000035580",
+        "name": "MINI VENTILADOR PORTATIL CONCEPTRONIC AERIVA03C",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 461563,
+        "sku": "MGS0000035578",
+        "name": "MINI VENTILADOR PORTATIL CONCEPTRONIC AERIVA02B TURBO ALTA VELOCIDAD",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 461561,
+        "sku": "MGS0000035576",
+        "name": "MINI VENTILADOR PORTATIL CONCEPTRONIC AERIVA01W 3 VELOCIDADES",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 455801,
+        "sku": "DSP0000041704",
+        "name": "MESA DE MEZCLAS PORTÁTIL HERCULES DJCONTROL MIX ULTRA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 445929,
+        "sku": "MGS0000035084",
+        "name": "ALTAVOZ PORTATIL AIWA BST-250 BLUETOOTH NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 445927,
+        "sku": "MGS0000035073",
+        "name": "ALTAVOZ PORTATIL AIWA BST-130RD BLUETOOTH ROJO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 445923,
+        "sku": "MGS0000035072",
+        "name": "ALTAVOZ PORTATIL AIWA BST-130TN BLUETOOTH NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 444403,
+        "sku": "DSP0000041154",
+        "name": "BASE STARTECH PARA PORTATIL 15.6\" MAX 10KG",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 441573,
+        "sku": "MGS0000025648",
+        "name": "AMPLIFICADOR PORTATIL FONESTAR ALTA-VOZ-30 / ALTAVOZ Y MICROFONO / 30 W / USB / MICRO SD / MP3 / GRABADOR - REPRODUCTOR / PARA PROFESORES",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 432983,
+        "sku": "MGS0000033453",
+        "name": "PROYECTOR TCL PLAYCUBE 150\" / FHD / 750 LUMENS / GOOGLE TV / PORTATIL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 152,
+        "targetName": "Proyección",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 152,
+          "name": "Proyección",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 429172,
+        "sku": "MGS0000034246",
+        "name": "AIRE ACONDICIONADO PORTATIL AIWA SETSUAIR 9000 BTU",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 442,
+        "targetName": "Aire acondicionado portátil",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 442,
+          "name": "Aire acondicionado portátil",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 428804,
+        "sku": "MGS0000013397",
+        "name": "ALTAVOZ PORTATIL AIWA BS-200 6W BLUETOOTH NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 428443,
+        "sku": "MGS-DSP0000027825",
+        "name": "Lapiz HP G3 OPTICO ACTIVO recargable",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 117,
+        "targetName": "Lápiz Digital",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 117,
+          "name": "Lápiz Digital",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 427650,
+        "sku": "MGS0000018238",
+        "name": "DOCK I-TEC USB-C ERGO 3X LCD METAL ERGONOMICO 4K DOCK PD 100 W",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 134,
+        "targetName": "Hub USB",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 134,
+          "name": "Hub USB",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 427144,
+        "sku": "B11B253402",
+        "name": "ESCANER PORTATIL EPSON WORKFORCE DS-80W A4/ 8.5PPM/ USB/ WIFI",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 115,
+        "targetName": "Escáneres",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 115,
+          "name": "Escáneres",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 427065,
+        "sku": "MGS0000033870",
+        "name": "Hub Phoenix tipo C Docking station 14 en 1 PD 100W para portatil",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 134,
+        "targetName": "Hub USB",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 134,
+          "name": "Hub USB",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 426736,
+        "sku": "MGS0000007505",
+        "name": "BASE HP USB-C G5",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 423404,
+        "sku": "DSP0000017160",
+        "name": "LOCALIZADOR GPS LEOTEC SMART TRACKER ANTI-PERDIDA 4G ROJO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 444,
+        "targetName": "Rastreadores gps",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 444,
+          "name": "Rastreadores gps",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 401354,
+        "sku": "MGS0000030025",
+        "name": "MINIDOCK COOLBOX 5 ALUMINIO USB-C + PD 100W/2X USB-A/1X USB-C/1X USB-A 3.2 GEN1",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 134,
+        "targetName": "Hub USB",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 134,
+          "name": "Hub USB",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 401079,
+        "sku": "MGS0000019313",
+        "name": "EXTENSION DE GARANTIA PARA PORTATIL ASUS STUDIOBOOK A 36 MESES",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 159,
+        "targetName": "Extensiones de la Garantía",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 159,
+          "name": "Extensiones de la Garantía",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 401039,
+        "sku": "MGS0000015825",
+        "name": "EXTENSION DE GARANTIA PARA PORTATIL ASUS A 36 MESES",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 159,
+        "targetName": "Extensiones de la Garantía",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 159,
+          "name": "Extensiones de la Garantía",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 401027,
+        "sku": "MGS0000015540",
+        "name": "EXTENSION DE GARANTIA PARA PORTATIL ASUS A 36 MESES",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 159,
+        "targetName": "Extensiones de la Garantía",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 159,
+          "name": "Extensiones de la Garantía",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 401014,
+        "sku": "MGS0000013879",
+        "name": "EXTENSION DE GARANTIA PARA PORTATIL ASUS A 48 MESES",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 159,
+        "targetName": "Extensiones de la Garantía",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 159,
+          "name": "Extensiones de la Garantía",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 399645,
+        "sku": "DSP0000024646",
+        "name": "LENOVO TAB P11 11,5\" (2ND GEN) 4GB/128GB 8MP/13MP +",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 107,
+        "targetName": "Tablets",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 107,
+          "name": "Tablets",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 395213,
+        "sku": "DSP0000039325",
+        "name": "CABLE SEGURIDAD STARTECH COMBINACION PARA PORTATIL 2M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 394484,
+        "sku": "DSP0000039076",
+        "name": "ALTAVOZ PORTATIL SONY SRSULT30W BLANCO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 394477,
+        "sku": "DSP0000039075",
+        "name": "ALTAVOZ PORTATIL SONY SRSULT10W BLANCO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 394468,
+        "sku": "DSP0000039072",
+        "name": "ALTAVOZ PORTATIL SONY SRSULT30H GRIS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 394462,
+        "sku": "DSP0000039071",
+        "name": "ALTAVOZ PORTATIL SONY SRSULT10H GRIS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 394455,
+        "sku": "DSP0000039070",
+        "name": "ALTAVOZ PORTATIL SONY SRSULT10D NARANJA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 394442,
+        "sku": "DSP0000039067",
+        "name": "ALTAVOZ PORTATIL SONY SRSULT30B NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 394436,
+        "sku": "DSP0000039066",
+        "name": "ALTAVOZ PORTATIL SONY SRSULT10B NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 388088,
+        "sku": "DSP0000034952",
+        "name": "RASTREADOR LEOTEC EASY TAG DUAL IOS Y ANDROID BLANCO + LLAVERO MARRON",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 444,
+        "targetName": "Rastreadores gps",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 444,
+          "name": "Rastreadores gps",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 385001,
+        "sku": "DSP0000033376",
+        "name": "CABLE SEGURIDAD STARTECH LLAVE PARA PORTATIL 2M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 384988,
+        "sku": "DSP0000033375",
+        "name": "CABLE SEGURIDAD STARTECH LLAVE PARA PORTATIL 2M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 384976,
+        "sku": "DSP0000033374",
+        "name": "CABLE SEGURIDAD STARTECH LLAVE PARA PORTATIL 2M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 384964,
+        "sku": "DSP0000033373",
+        "name": "CABLE SEGURIDAD STARTECH COMBINACION PARA PORTATIL 2M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 384094,
+        "sku": "DSP0000032993",
+        "name": "REPOSAPIES FELLOWES BREYTA NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 210,
+        "targetName": "Muebles de oficina",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 210,
+          "name": "Muebles de oficina",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 327147,
+        "sku": "MGS0000022750",
+        "name": "ALTAVOZ PORTATIL CON MICROFONO FONESTAR MALIBU-315 / 50W RMS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 325555,
+        "sku": "MGS0000028017",
+        "name": "YOEVU - Mesa Solid 86 Cm portátil 86X86X74 CM Uso Interior/Exterior (EN 581-1/3) Tablero Resina HDPE 35cm Capacidad 6/8 Personas y Carga 150 kg. Multiuso",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 210,
+        "targetName": "Muebles de oficina",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 210,
+          "name": "Muebles de oficina",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 324061,
+        "sku": "DSP0000023186",
+        "name": "REPOSAPIES TOOQ AJUSTABLE CONFORT NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 210,
+        "targetName": "Muebles de oficina",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 210,
+          "name": "Muebles de oficina",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 323722,
+        "sku": "DSP0000022657",
+        "name": "ALFOMBRILLA MARS GAMING MMPXL XXL PLATA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 118,
+        "targetName": "Alfombrillas",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 118,
+          "name": "Alfombrillas",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 323716,
+        "sku": "DSP0000022655",
+        "name": "REPOSAPIES FELLOWES AJUSTABLE ERGONOMICO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 210,
+        "targetName": "Muebles de oficina",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 210,
+          "name": "Muebles de oficina",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 321562,
+        "sku": "DSP0000020249",
+        "name": "BASE DE REFRIGERACION MARS GAMING MNBC23 PARA PORTATIL 16\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 320777,
+        "sku": "DSP0000017152",
+        "name": "LOCALIZADOR GPS LEOTEC SMART TRACKER ANTI-PERDIDA 4G NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 444,
+        "targetName": "Rastreadores gps",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 444,
+          "name": "Rastreadores gps",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 319961,
+        "sku": "DSP0000013378",
+        "name": "ALTAVOZ PORTATIL URBANISTA SYDNEY BLUETOOTH ORO ROSA / ROSE GOLD",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 319957,
+        "sku": "DSP0000013373",
+        "name": "ALTAVOZ PORTATIL URBANISTA SYDNEY BLUETOOTH NEGRO / MIDNIGHT BLACK",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 319355,
+        "sku": "DSP0000009793",
+        "name": "CABLE SEGURIDAD NUMERICAL NILOX PARA PORTATIL CONEXION NANO 1.9M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 319138,
+        "sku": "DSP0000009075",
+        "name": "BASE DE REFRIGERACION MARS GAMING MNBC5 PARA PORTATIL HASTA 17.3\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 318999,
+        "sku": "DSP0000008840",
+        "name": "BASE DE REFRIGERACION MARS GAMING MNBC2 PARA PORTATIL HASTA 17\"",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 318482,
+        "sku": "DSP0000006774",
+        "name": "Ebook SPC dickens light 2 6\" 8GB negro",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 448,
+        "targetName": "E-books",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 448,
+          "name": "E-books",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 318178,
+        "sku": "DSP0000006132",
+        "name": "CABLE SEGURIDAD PARA PORTATIL NILOX CON LLAVE 1.8M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 317970,
+        "sku": "DSP0000004682",
+        "name": "LECTOR CODIGO DE BARRAS ESCANER DATALOGIC DBT6420 PORTATIL BT 2D IMAGER USB KIT IP50 INCL CABLE Y BASE",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 141,
+        "targetName": "Lectores de código barras",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 141,
+          "name": "Lectores de código barras",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 317509,
+        "sku": "DSP0000002266",
+        "name": "CUBIERTA WEBCAM NATEC CRAYFISH",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 111,
+        "targetName": "Periféricos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 111,
+          "name": "Periféricos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 317298,
+        "sku": "B11B253401",
+        "name": "ESCANER PORTATIL EPSON WORKFORCE ES-60W A4/ 4S PAG/ USB/ SCANSMART/ WIFI",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 115,
+        "targetName": "Escáneres",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 115,
+          "name": "Escáneres",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 315761,
+        "sku": "MGS0000033452",
+        "name": "PROYECTOR TCL SMART C1 120\" / FHD / 230 LUMENS / GOOGLE TV / PORTATIL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 152,
+        "targetName": "Proyección",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 152,
+          "name": "Proyección",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 315756,
+        "sku": "MGS0000033451",
+        "name": "PROYECTOR TCL SMART A1S 150\" / FHD / 600 LUMENS / GOOGLE TV / PORTATIL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 152,
+        "targetName": "Proyección",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 152,
+          "name": "Proyección",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 293304,
+        "sku": "MGS0000027678",
+        "name": "LIBRO ELECTRONICO EBOOK POCKETBOOK VERSE LITE 6\" 8GB MIDNIGHT GREY",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 448,
+        "targetName": "E-books",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 448,
+          "name": "E-books",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 288747,
+        "sku": "MGS0000018248",
+        "name": "CABLE SEGURIDAD TIPO NANO TOOQ CON COMBINACION PARA PORTATIL 1.5M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 288728,
+        "sku": "MGS0000018247",
+        "name": "CABLE SEGURIDAD TIPO NANO TOOQ CON LLAVE PARA PORTATIL 1.5M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 285161,
+        "sku": "MGS0000017052",
+        "name": "PROYECTOR EPSON CO-FH01 3LCD/ 3000 LUMENS/ FULL HD/ HDMI/ USB/ PROYECTOR PORTATIL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 152,
+        "targetName": "Proyección",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 152,
+          "name": "Proyección",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 284879,
+        "sku": "MGS0000016957",
+        "name": "HUB I-TEC USB 3.0 DELGADO CON 3 PUERTOS USB 3.0 Y ETHERNET GLAN RJ-45",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 134,
+        "targetName": "Hub USB",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 134,
+          "name": "Hub USB",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 278612,
+        "sku": "MGS0000013623",
+        "name": "PROYECTOR EPSON CO-FH02 3LCD/ 3000 LUMENS/ FULL HD/ HDMI/ USB/ ANDROID TV/ PROYECTOR PORTATIL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 152,
+        "targetName": "Proyección",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 152,
+          "name": "Proyección",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 278606,
+        "sku": "MGS0000013622",
+        "name": "PROYECTOR EPSON CO-W01 3LCD/ 3000 LUMENS/ WXGA/ HDMI/ USB/ PROYECTOR PORTATIL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 152,
+        "targetName": "Proyección",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 152,
+          "name": "Proyección",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 277301,
+        "sku": "MGS0000012685",
+        "name": "HUB PORTATIL TP-LINK UH400 4 PUERTOS USB 3.0",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 134,
+        "targetName": "Hub USB",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 134,
+          "name": "Hub USB",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 274198,
+        "sku": "MGS0000011426",
+        "name": "BOLSA/ BANDOLERA PORTATIL HP 15.6\" RENEW BUSINESS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 228387,
+        "sku": "DSP0000007611",
+        "name": "CABLE SEGURIDAD PARA PORTATIL NILOX COMBINACION 4 DIGITOS 1.5M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 228349,
+        "sku": "DSP0000007565",
+        "name": "BASE PARA PORTATIL TARGUS CON HUB INTEGRADO 4x USB- A PLATA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 224550,
+        "sku": "DSP0000003213",
+        "name": "CABLE SEGURIDAD UNIVERSAL TOOQ CON LLAVE PARA PORTATIL TQCLKC0025 1,5M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 224332,
+        "sku": "DSP0000003119",
+        "name": "TROLLEY PORTATIL TARGUS EXECUTIVE 15,6\" NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 221382,
+        "sku": "B11B252402",
+        "name": "ESCANER PORTATIL EPSON WORKFORCE DS-70 A4/ 5.5S PAG/ USB/ SCANSMART",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 115,
+        "targetName": "Escáneres",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 115,
+          "name": "Escáneres",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 221378,
+        "sku": "B11B252401",
+        "name": "ESCANER PORTATIL EPSON WORKFORCE ES-50 A4/ 5.5S PAG/ USB/ SCANSMART",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 115,
+        "targetName": "Escáneres",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 115,
+          "name": "Escáneres",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 220134,
+        "sku": "PTP710BTCUBE",
+        "name": "ROTULADORA PORTATIL BROTHER PT-P710BT CUBE USB/ BLUETOOTH",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 126,
+        "targetName": "Impresoras de Etiquetas Adhesivas",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 126,
+          "name": "Impresoras de Etiquetas Adhesivas",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 216445,
+        "sku": "MGS0000013398",
+        "name": "ALTAVOZ PORTATIL AIWA BS-200 6W BLUETOOTH ROJO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 215253,
+        "sku": "MGS0000001719",
+        "name": "ESCANER PORTATIL BROTHER DS640 COMPACTO/ 15PPM/ USB 3.0",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 115,
+        "targetName": "Escáneres",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 115,
+          "name": "Escáneres",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 213435,
+        "sku": "DSP0000028000",
+        "name": "ALTAVOZ PORTATIL BLUETOOTH NGS WILD TEMPER 200W",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 212641,
+        "sku": "DSP0000014337",
+        "name": "REGLETA PHASAK 8 TOMAS ARMARIO RACK 19\" CON INTERRUPTOR 1.5M NEGRO BNS 1518",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 223,
+        "targetName": "Regletas",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 223,
+          "name": "Regletas",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 212251,
+        "sku": "DSP0000001545",
+        "name": "BASE REFRIGERADORA GENESIS OXID 450 RGB PARA PORTATIL HASTA 15.6",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 209826,
+        "sku": "SCANP215II",
+        "name": "ESCANER PORTATIL CANON P215 II 15PPM / A4 / DUPLEX/ ADF / CARNET Y TARJETA/ 500 ESCANEOS/DIA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 115,
+        "targetName": "Escáneres",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 115,
+          "name": "Escáneres",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 209818,
+        "sku": "SCANP208II",
+        "name": "ESCANER PORTATIL CANON P208 II 8PPM/ A4/ DUPLEX/ ADF/ USB/ WIFI OPCIONAL/ 100 ESCANEOS/DIA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 115,
+        "targetName": "Escáneres",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 115,
+          "name": "Escáneres",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 209556,
+        "sku": "P23DTSC",
+        "name": "CALCULADORA CANON IMPRESION PORTATIL P23-DTSC",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 145,
+        "targetName": "Calculadoras",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 145,
+          "name": "Calculadoras",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 205986,
+        "sku": "MGS0000028015",
+        "name": "YOEVU - Mesa Plegable Solid 120cm portátil 122X70X74 CM Uso Interior/Exterior (EN 581-1/3) Tablero Resina HDPE 35cm Capacidad 4/6 Personas y Carga 150 kg. Multiuso",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 210,
+        "targetName": "Muebles de oficina",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 210,
+          "name": "Muebles de oficina",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 205662,
+        "sku": "MGS0000027531",
+        "name": "VENTILADOR PORTATIL THULOS TH-MFN-02 NEGRO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 205654,
+        "sku": "MGS0000027530",
+        "name": "VENTILADOR PORTATIL THULOS TH-MFN-02 BLANCO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 205642,
+        "sku": "MGS0000027529",
+        "name": "VENTILADOR PORTATIL THULOS TH-MFN-01 ROSA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 204058,
+        "sku": "MGS0000023818",
+        "name": "CABLE DE SEGURIDAD EWENT PARA PORTATIL/ LLAVE 1.8M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 204050,
+        "sku": "MGS0000023817",
+        "name": "CABLE DE SEGURIDAD EWENT PARA PORTATIL/ COMBINACION 4 DIGITOS 1.8M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 203598,
+        "sku": "MGS0000022741",
+        "name": "ALTAVOZ PORTATIL CON MICROFONO FONESTAR MALIBU-308 / 20W RMS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 202791,
+        "sku": "MGS0000020936",
+        "name": "BARRA DE SONIDO PORTATIL FONESTAR SING-BAR",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 202402,
+        "sku": "MGS0000019856",
+        "name": "AIRE ACONDICIONADO PORTATIL HISENSE APC09QC / A / 2236 FRIG / GAS 290 / WIFI",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 442,
+        "targetName": "Aire acondicionado portátil",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 442,
+          "name": "Aire acondicionado portátil",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 200064,
+        "sku": "MGS0000015623",
+        "name": "CABLE DE SEGURIDAD CON CANDADO EWENT EW1243 PARA PORTATIL CON COMBINACION DE NUMEROS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 198231,
+        "sku": "MGS0000011124",
+        "name": "CABLE DE SEGURIDAD EWENT PARA PORTATIL/ KESINGTON COMBINACION DE NUMEROS 4 DIGITOS/ 1.5M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 198221,
+        "sku": "MGS0000011058",
+        "name": "ALTAVOZ PORTATIL FONESTAR PARTY-DUO BLUETOOTH/ 100W / MANDO A DISTANCIA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 195361,
+        "sku": "MGS0000002290",
+        "name": "CALCULADORA CANON IMPRESION PORTATIL P1-DTSC II HWB 12 DIGITOS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 145,
+        "targetName": "Calculadoras",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 145,
+          "name": "Calculadoras",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 195205,
+        "sku": "MGS0000001720",
+        "name": "ESCANER PORTATIL BROTHER DS740D COMPACTO/ 30PPM/ DUPLEX AUTOMATICO/ USB 3.0",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 115,
+        "targetName": "Escáneres",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 115,
+          "name": "Escáneres",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 194605,
+        "sku": "EW1242",
+        "name": "CABLE DE SEGURIDAD EWENT CIERRE KENSINGTON (UNIVERSAL) PARA PORTATIL/ 2 LLAVES/ 1.5M",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 200,
+        "targetName": "Cable Antirrobo para portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 200,
+          "name": "Cable Antirrobo para portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 193575,
+        "sku": "DSP0000029530",
+        "name": "BASE REFRIGERADORA GENESIS OXID 850 RGB PARA PORTATIL 15.6\"-17.3\" USB",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 343,
+        "targetName": "Bases",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 343,
+          "name": "Bases",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 192287,
+        "sku": "ALTA-VOZ-W30",
+        "name": "AMPLIFICADOR PORTATIL FONESTAR ALTA-VOZ-30 / MICROFONO INALAMBRICO UHF / 30 W / USB / MICRO SD / MP3 / GRABADOR - REPRODUCTOR / PARA PROFESORES",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 192281,
+        "sku": "ALTA-VOZ-30",
+        "name": "AMPLIFICADOR PORTATIL FONESTAR ALTA-VOZ-30 / ALTAVOZ Y MICROFONO / 30 W / USB / MICRO SD / MP3 / GRABADOR - REPRODUCTOR / PARA PROFESORES",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 190577,
+        "sku": "MGS0000031143",
+        "name": "ALTAVOZ PORTATIL FONESTAR CALIFORNIA 200W / JACK / AUXILIAR / FUNCION KARAOKE / BLUETOOTH / USB / MP3 / RADIO FM / MICROFONO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 190497,
+        "sku": "MGS0000030725",
+        "name": "ALTAVOZ PORTATIL CON MICROFONO FONESTAR MALIBU-315 / 50W RMS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 190091,
+        "sku": "MGS0000027535",
+        "name": "VENTILADOR PORTATIL THULOS TH-MFN-05 VERDE",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 190087,
+        "sku": "MGS0000027534",
+        "name": "VENTILADOR PORTATIL THULOS TH-MFN-05 BLANCO",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 190083,
+        "sku": "MGS0000027533",
+        "name": "VENTILADOR PORTATIL THULOS TH-MFN-03 BLANCO/ROSA",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 190079,
+        "sku": "MGS0000027532",
+        "name": "VENTILADOR PORTATIL THULOS TH-MFN-03 BLANCO/AZUL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 189901,
+        "sku": "MGS0000025781",
+        "name": "Ebook Pocketbook inkpad 2 color 7.8\" 16GB moon silver",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 448,
+        "targetName": "E-books",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 448,
+          "name": "E-books",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 189887,
+        "sku": "MGS0000025772",
+        "name": "Ebook Pocketbook inkpad color 7.8\" 16GB plata",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 448,
+        "targetName": "E-books",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 448,
+          "name": "E-books",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 189733,
+        "sku": "MGS0000022749",
+        "name": "ALTAVOZ PORTATIL CON MICROFONO FONESTAR MALIBU-310 / 20W RMS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 189721,
+        "sku": "MGS0000022747",
+        "name": "ALTAVOZ PORTATIL CON MICROFONO FONESTAR MALIBU-312 / 50W RMS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 189439,
+        "sku": "MGS0000016337",
+        "name": "TERMOVENTILADOR PORTATIL THULOS ET-TV05 1000W/2000W",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 228,
+        "targetName": "Pequeños electrodomésticos",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 228,
+          "name": "Pequeños electrodomésticos",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 187295,
+        "sku": "BOX-35LED",
+        "name": "ALTAVOZ PORTATIL FONESTAR BOX-35LED BLUETOOTH/ KARAOKE/ USB/ SD/ MICROFONO INALAMBRICO/ 35W RMS",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 219,
+        "targetName": "Altavoces",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 219,
+          "name": "Altavoces",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 186542,
+        "sku": "MGS0000028010",
+        "name": "YOEVU | Mesa Plegable Solid 152 cm portátil 152X71X74 CM Uso Interior/Exterior (EN 581-1/3) Tablero Resina HDPE 35cm Capacidad 6/8 Personas y Carga 150 kg. Multiuso",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 210,
+        "targetName": "Muebles de oficina",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 210,
+          "name": "Muebles de oficina",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 183001,
+        "sku": "PHPORTCHROMA",
+        "name": "Pantalla Chroma portátil",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 156,
+        "targetName": "Fotografía",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 156,
+          "name": "Fotografía",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 182919,
+        "sku": "PHLONDON",
+        "name": "Bandolera nylon hasta 10\" negra",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 248,
+        "targetName": "Maletines para Portátiles",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 248,
+          "name": "Maletines para Portátiles",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 182668,
+        "sku": "PH4USBHUB3",
+        "name": "HUB PHOENIX USB 4 PUERTOS USB 3.0 PORTATIL",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 134,
+        "targetName": "Hub USB",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 134,
+          "name": "Hub USB",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": 182662,
+        "sku": "PH4USBHUB2",
+        "name": "Hub USB Portatil Phoenix 4 Puertos USB 2.0 Cable Conector USB Flexible Diseño Compacto",
+        "categories": [
+          {
+            "id": 89,
+            "name": "Portátiles",
+            "slug": "portatiles"
+          }
+        ]
+      },
+      "rule": {
+        "targetId": 134,
+        "targetName": "Hub USB",
+        "pattern": {}
+      },
+      "categories": [
+        {
+          "id": 134,
+          "name": "Hub USB",
+          "slug": ""
+        }
+      ]
+    }
+  ]
+}

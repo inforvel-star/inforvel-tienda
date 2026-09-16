@@ -1,22 +1,57 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { CircleCheck as CheckCircle, Package, Truck } from 'lucide-react';
+import { CircleCheck as CheckCircle, Package, Truck, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function ConfirmacionPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [orderId, setOrderId] = useState<string | null>(null);
+  const [orderConfirmed, setOrderConfirmed] = useState(false);
+  const confirmedRef = useRef(false);
 
   useEffect(() => {
     const id = searchParams.get('order_id');
+    const paymentIntentId = searchParams.get('payment_intent');
+
     if (!id) {
       router.push('/');
+      return;
+    }
+
+    setOrderId(id);
+
+    // If we have a payment_intent (from Stripe redirect), confirm the order
+    if (paymentIntentId && !confirmedRef.current) {
+      confirmedRef.current = true;
+      
+      fetch('/api/confirm-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          payment_intent_id: paymentIntentId,
+          order_id: id,
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success) {
+            setOrderConfirmed(true);
+          } else {
+            console.error('Error confirming order:', data.error);
+            // Still show confirmation page - payment succeeded in Stripe
+            setOrderConfirmed(true);
+          }
+        })
+        .catch((err) => {
+          console.error('Error confirming order:', err);
+          setOrderConfirmed(true);
+        });
     } else {
-      setOrderId(id);
+      setOrderConfirmed(true);
     }
   }, [searchParams, router]);
 
@@ -49,6 +84,16 @@ export default function ConfirmacionPage() {
             </div>
 
             <div className="space-y-3 pt-4 border-t border-border">
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <div>
+                  <p className="font-medium">Pago confirmado</p>
+                  <p className="text-xs text-muted-foreground">
+                    Tu pago ha sido procesado correctamente
+                  </p>
+                </div>
+              </div>
+
               <div className="flex items-center gap-3">
                 <Package className="w-5 h-5 text-blue-500" />
                 <div>
