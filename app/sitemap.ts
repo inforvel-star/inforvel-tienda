@@ -1,12 +1,13 @@
 import type { MetadataRoute } from 'next';
-import { headers } from 'next/headers';
 import { wcApi } from '@/lib/woocommerce';
 import { getPosts } from '@/lib/wordpress';
 import { getBaseUrl } from '@/lib/seo';
 
 // Next conserva el XML generado y lo revalida cada hora. Así los rastreadores no
 // esperan a que WooCommerce recorra todo el catálogo en cada petición.
-export const dynamic = 'force-dynamic';
+// IMPORTANTE: no usar `dynamic = 'force-dynamic'` ni llamar a `headers()`/`cookies()`
+// aquí dentro: ambas cosas fuerzan renderizado dinámico y anulan este `revalidate`,
+// provocando que cada visita recorra el catálogo completo (~29k productos, ~100s).
 export const revalidate = 3600;
 
 const PAGE_SIZE = 100;
@@ -82,7 +83,6 @@ async function withTimeout<T>(promise: Promise<T>, timeoutMs: number): Promise<T
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  headers();
   const baseUrl = getBaseUrl();
   const now = new Date();
 
