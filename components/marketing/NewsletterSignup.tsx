@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { CheckCircle2, Loader2, Mail } from 'lucide-react';
 
 export function NewsletterSignup() {
@@ -44,12 +45,20 @@ export function NewsletterSignup() {
         ) : (
           <div>
             <form onSubmit={subscribe} className="flex flex-col gap-3 sm:flex-row">
-              <input type="email" required value={email} onChange={(event) => setEmail(event.target.value)} placeholder="tu@email.com" className="min-h-[46px] flex-1 rounded-xl border border-zinc-700 bg-zinc-950/80 px-4 text-white outline-none focus:border-blue-500" />
+              <label htmlFor="newsletter-email" className="sr-only">Email para recibir ofertas</label>
+              <input id="newsletter-email" name="email" type="email" required value={email} onChange={(event) => setEmail(event.target.value)} placeholder="tu@email.com" className="min-h-[46px] flex-1 rounded-xl border border-zinc-700 bg-zinc-950/80 px-4 text-white outline-none focus:border-blue-500" />
               <button type="submit" disabled={loading} className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 font-semibold text-white hover:bg-blue-500 disabled:opacity-60">
                 {loading && <Loader2 className="h-4 w-4 animate-spin" />} Quiero recibir ofertas
               </button>
             </form>
             {result && !result.success && <p className="mt-2 text-sm text-red-400">{result.message}</p>}
+            <p className="mt-2 text-xs text-zinc-500">
+              Al suscribirte aceptas nuestra{' '}
+              <Link href="/politica-privacidad" className="underline hover:text-zinc-300">
+                política de privacidad
+              </Link>
+              .
+            </p>
           </div>
         )}
       </div>

@@ -38,6 +38,9 @@ export function CheckoutForm({ clientSecret, paymentIntentId, checkoutToken }: C
   const [paymentRequest, setPaymentRequest] = useState<PaymentRequest | null>(null);
   const [couponInput, setCouponInput] = useState('');
   const [isApplyingCoupon, setIsApplyingCoupon] = useState(false);
+  const [consentPrivacidad, setConsentPrivacidad] = useState(false);
+  const [consentCondiciones, setConsentCondiciones] = useState(false);
+  const [consentPublicidad, setConsentPublicidad] = useState(false);
   const [billingDetails, setBillingDetails] = useState({
     firstName: '',
     lastName: '',
@@ -216,6 +219,11 @@ export function CheckoutForm({ clientSecret, paymentIntentId, checkoutToken }: C
       return;
     }
 
+    if (!consentPrivacidad || !consentCondiciones) {
+      toast.error('Debes aceptar la Política de Privacidad y las Condiciones Generales para continuar');
+      return;
+    }
+
     setIsLoading(true);
 
     try {
@@ -257,6 +265,11 @@ export function CheckoutForm({ clientSecret, paymentIntentId, checkoutToken }: C
             product_id: item.id,
             quantity: item.quantity,
           })),
+          consent: {
+            privacy: consentPrivacidad,
+            terms: consentCondiciones,
+            marketing: consentPublicidad,
+          },
         })
       });
       const order = await response.json();
@@ -520,7 +533,14 @@ export function CheckoutForm({ clientSecret, paymentIntentId, checkoutToken }: C
         </div>
       </div>
 
-      <CheckboxesFormularioCompra />
+      <CheckboxesFormularioCompra
+        privacidad={consentPrivacidad}
+        onPrivacidadChange={setConsentPrivacidad}
+        condiciones={consentCondiciones}
+        onCondicionesChange={setConsentCondiciones}
+        publicidad={consentPublicidad}
+        onPublicidadChange={setConsentPublicidad}
+      />
 
       <Button
         type="submit"

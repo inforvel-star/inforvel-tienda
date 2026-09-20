@@ -30,6 +30,9 @@ export async function POST(request: NextRequest) {
         const city = String(billing?.city || '').trim();
         const postcode = String(billing?.postcode || '').trim();
         const country = String(billing?.country || '').trim().toUpperCase();
+        const consentPrivacy = orderData?.consent?.privacy === true;
+        const consentTerms = orderData?.consent?.terms === true;
+        const consentMarketing = orderData?.consent?.marketing === true;
 
         if (!paymentIntentId || !checkoutToken) {
             return NextResponse.json(
@@ -62,6 +65,13 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: 'País de facturación inválido' }, { status: 400 });
         }
 
+        if (!consentPrivacy || !consentTerms) {
+            return NextResponse.json(
+                { error: 'Debes aceptar la Política de Privacidad y las Condiciones Generales' },
+                { status: 400 }
+            );
+        }
+
         const totals = await calculateCheckoutTotals(orderData?.line_items, couponCode);
         const cartFingerprint = buildCartFingerprint(totals.normalizedItems, couponCode);
         if (!verifyCheckoutToken(paymentIntentId, cartFingerprint, checkoutToken)) {
@@ -91,12 +101,17 @@ export async function POST(request: NextRequest) {
                 ...(Array.isArray(orderData?.meta_data) ? orderData.meta_data : []),
                 { key: '_stripe_payment_intent_id', value: paymentIntentId },
                 { key: '_checkout_cart_fingerprint', value: cartFingerprint },
+                { key: '_consent_privacy', value: consentPrivacy ? 'yes' : 'no' },
+                { key: '_consent_terms', value: consentTerms ? 'yes' : 'no' },
+                { key: '_consent_marketing', value: consentMarketing ? 'yes' : 'no' },
+                { key: '_consent_recorded_at', value: new Date().toISOString() },
             ],
         };
         delete sanitizedOrderData.payment_intent_id;
         delete sanitizedOrderData.checkout_token;
         delete sanitizedOrderData.total;
         delete sanitizedOrderData.subtotal;
+        delete sanitizedOrderData.consent;
 
         const order = await woocommerce.createOrder(sanitizedOrderData as any);
 
