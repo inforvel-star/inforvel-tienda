@@ -1,6 +1,7 @@
 'use client';
 
 import { FormEvent, useMemo, useState } from 'react';
+import Link from 'next/link';
 
 const LOCALITY_OPTIONS = ['Córdoba Capital', 'Provincia', 'Fuera de Córdoba'] as const;
 
@@ -171,6 +172,13 @@ export function TechnicalServiceLeadForm() {
       {resultMessage && (
         <p className={`mt-4 text-sm ${resultOk ? 'text-green-400' : 'text-yellow-400'}`}>{resultMessage}</p>
       )}
+      <p className="mt-4 text-xs text-zinc-500">
+        Al enviar este formulario aceptas nuestra{' '}
+        <Link href="/politica-privacidad" className="underline hover:text-zinc-300">
+          política de privacidad
+        </Link>
+        .
+      </p>
     </form>
   );
 }

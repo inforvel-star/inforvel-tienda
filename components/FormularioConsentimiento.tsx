@@ -16,11 +16,23 @@ import Link from "next/link";
 // ─────────────────────────────────────────────
 // Versión compacta para formularios de COMPRA
 // ─────────────────────────────────────────────
-export function CheckboxesFormularioCompra() {
-  const [privacidad, setPrivacidad] = useState(false);
-  const [condiciones, setCondiciones] = useState(false);
-  const [publicidad, setPublicidad] = useState(false);
+interface CheckboxesFormularioCompraProps {
+  privacidad: boolean;
+  onPrivacidadChange: (checked: boolean) => void;
+  condiciones: boolean;
+  onCondicionesChange: (checked: boolean) => void;
+  publicidad: boolean;
+  onPublicidadChange: (checked: boolean) => void;
+}
 
+export function CheckboxesFormularioCompra({
+  privacidad,
+  onPrivacidadChange,
+  condiciones,
+  onCondicionesChange,
+  publicidad,
+  onPublicidadChange,
+}: CheckboxesFormularioCompraProps) {
   return (
     <fieldset className="mt-4 space-y-3 border-t border-gray-200 pt-4">
       <legend className="sr-only">Consentimientos y aceptaciones</legend>
@@ -31,7 +43,7 @@ export function CheckboxesFormularioCompra() {
           type="checkbox"
           required
           checked={privacidad}
-          onChange={(e) => setPrivacidad(e.target.checked)}
+          onChange={(e) => onPrivacidadChange(e.target.checked)}
           className="mt-0.5 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 shrink-0"
         />
         <span className="text-sm text-gray-700">
@@ -49,7 +61,7 @@ export function CheckboxesFormularioCompra() {
           type="checkbox"
           required
           checked={condiciones}
-          onChange={(e) => setCondiciones(e.target.checked)}
+          onChange={(e) => onCondicionesChange(e.target.checked)}
           className="mt-0.5 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 shrink-0"
         />
         <span className="text-sm text-gray-700">
@@ -66,7 +78,7 @@ export function CheckboxesFormularioCompra() {
         <input
           type="checkbox"
           checked={publicidad}
-          onChange={(e) => setPublicidad(e.target.checked)}
+          onChange={(e) => onPublicidadChange(e.target.checked)}
           className="mt-0.5 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 shrink-0"
         />
         <span className="text-sm text-gray-700">

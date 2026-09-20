@@ -1,5 +1,12 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { Trophy, Star, Zap, TrendingUp, Shield, Info } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'Sistema de Puntos y Recompensas',
+    description:
+        'Descubre cómo ganar y canjear puntos Inforvel: niveles, recompensas y ventajas por tus compras y participación.',
+};
 
 const LEVELS = [
     {
