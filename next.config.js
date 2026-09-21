@@ -20,6 +20,63 @@ const nextConfig = {
         destination: '/servicios-pymes-empresas-cordoba',
         permanent: true,
       },
+      // Blog: posts renovados por contenido de poco valor (revisión AdSense, sep 2026).
+      // Los slugs antiguos redirigen al artículo nuevo que ocupa su lugar.
+      {
+        source: '/blog/prueba-simple',
+        destination: '/blog/inteligencia-artificial-en-2026-oportunidades-riesgos-y-futuro',
+        permanent: true,
+      },
+      {
+        source: '/blog/smartphones-en-2025-la-revolucion-silenciosa-que-redefine-nuestra-realidad',
+        destination: '/blog/como-elegir-smartphone-reacondicionado-guia-completa',
+        permanent: true,
+      },
+      {
+        source: '/blog/redes-sociales-y-tendencias-digitales-la-revolucion-silenciosa-que-transforma-nuestro-mundo-en-2025',
+        destination: '/blog/windows-10-sin-soporte-que-hacer-con-tu-pc-antiguo',
+        permanent: true,
+      },
+      {
+        source: '/blog/el-futuro-ya-esta-aqui-los-gadgets-y-el-hardware-que-definen-el-2026',
+        destination: '/blog/ssd-vs-hdd-cuando-actualizar-disco-ordenador',
+        permanent: true,
+      },
+      {
+        source: '/blog/software-y-aplicaciones-web-el-futuro-es-ahora-y-ya-esta-transformando-tu-dia-a-dia',
+        destination: '/blog/como-saber-si-tu-ordenador-tiene-virus-y-como-solucionarlo',
+        permanent: true,
+      },
+      {
+        source: '/blog/software-y-aplicaciones-web-en-2025-la-revolucion-silenciosa-que-transforma-nuestro-dia-a-dia',
+        destination: '/blog/como-saber-si-tu-ordenador-tiene-virus-y-como-solucionarlo',
+        permanent: true,
+      },
+      {
+        source: '/blog/el-futuro-es-electrico-coches-y-movilidad-tecnologica-revolucionan-2025',
+        destination: '/blog/portatil-lento-causas-comunes-y-como-solucionarlas',
+        permanent: true,
+      },
+      {
+        source: '/blog/coches-electricos-2025-la-revolucion-tecnologica-que-ya-esta-transformando-nuestra-movilidad',
+        destination: '/blog/portatil-lento-causas-comunes-y-como-solucionarlas',
+        permanent: true,
+      },
+      {
+        source: '/blog/noticias-tecnolgicas-madrid-tiene-una-red-de-cercanas-saturada-solucin-trenes-gigantes-de',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/noticias-tecnolgicas-la-ue-vuelve-a-apretarle-las-tuercas-a-google-quiere-que-gemini-deje',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/noticias-tecnolgicas-china-ha-adelantado-a-la-nasa-con-uno-de-sus-proyectos-ms-ambiciosos',
+        destination: '/blog',
+        permanent: true,
+      },
     ];
   },
 
